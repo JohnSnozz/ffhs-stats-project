@@ -1,0 +1,5 @@
+# Data directories
+data/
+
+# Claude Code configuration
+CLAUDE.md
