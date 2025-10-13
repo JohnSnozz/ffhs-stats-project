@@ -1,0 +1,119 @@
+2025-10-13 21:58:58,160 - INFO - ============================================================
+2025-10-13 21:58:58,160 - INFO - Creating database views for municipal merger handling
+2025-10-13 21:58:58,160 - INFO - ============================================================
+2025-10-13 21:58:58,160 - INFO - Connecting to database: data/swiss_votings.db
+2025-10-13 21:58:58,160 - INFO - Creating municipality mapping view...
+2025-10-13 21:58:58,184 - INFO - Municipality mapping view created successfully
+2025-10-13 21:58:58,184 - INFO - Creating current voting results view...
+2025-10-13 21:58:58,207 - INFO - Current voting results view created successfully
+2025-10-13 21:58:58,207 - INFO - Creating municipality evolution view...
+2025-10-13 21:58:58,231 - INFO - Municipality evolution view created successfully
+2025-10-13 21:58:58,231 - INFO - Creating merger statistics view...
+2025-10-13 21:58:58,250 - INFO - Merger statistics view created successfully
+2025-10-13 21:58:58,250 - INFO - Creating indexes for view performance...
+2025-10-13 21:58:58,250 - INFO - Indexes created successfully
+2025-10-13 21:58:58,250 - INFO - Verifying views and gathering statistics...
+2025-10-13 21:58:58,536 - INFO - Municipality mappings:
+2025-10-13 21:58:58,536 - INFO -   Total mappings: 2123
+2025-10-13 21:58:58,536 - INFO -   Historical municipalities: 2123
+2025-10-13 21:58:58,536 - INFO -   Current municipalities: 2121
+2025-10-13 21:58:58,536 - INFO -   Municipalities that merged: 3
+2025-10-13 21:58:58,536 - INFO -   Maximum cascade depth: 2
+2025-10-13 21:59:00,614 - INFO - 
+Current voting results view:
+2025-10-13 21:59:00,614 - INFO -   Total records: 471595
+2025-10-13 21:59:00,614 - INFO -   Votings: 78
+2025-10-13 21:59:00,614 - INFO -   Proposals: 223
+2025-10-13 21:59:00,614 - INFO -   Current municipalities: 2121
+2025-10-13 21:59:00,614 - INFO -   Max municipalities merged together: 3
+2025-10-13 21:59:00,615 - INFO -   Records showing mergers: 223
+2025-10-13 21:59:02,309 - INFO - 
+Examples of merged municipalities:
+2025-10-13 21:59:02,326 - INFO -   Capriasca (BFS 5226): 3 municipalities merged
+2025-10-13 21:59:02,326 - INFO -     Original BFS: 5226,5236,5237
+2025-10-13 21:59:03,018 - INFO - 
+Merger effect on most recent voting (20250928):
+2025-10-13 21:59:03,018 - INFO -   Original municipalities: 2122
+2025-10-13 21:59:03,018 - INFO -   After mergers: 2120
+2025-10-13 21:59:03,018 - INFO -   Reduction: 2
+2025-10-13 21:59:03,018 - INFO - 
+============================================================
+2025-10-13 21:59:03,018 - INFO - USAGE EXAMPLES
+2025-10-13 21:59:03,018 - INFO - ============================================================
+2025-10-13 21:59:03,018 - INFO - 
+Get voting results for latest vote with current municipalities:
+2025-10-13 21:59:03,018 - INFO - 
+SELECT
+    municipality_id,
+    municipality_name,
+    ja_stimmen_absolut,
+    nein_stimmen_absolut,
+    ja_prozent,
+    stimmbeteiligung,
+    merged_municipality_count
+FROM v_voting_results_current
+WHERE voting_date = (SELECT MAX(voting_date) FROM votings)
+ORDER BY municipality_name;
+2025-10-13 21:59:03,019 - INFO - 
+Find which municipalities merged into a specific one:
+2025-10-13 21:59:03,019 - INFO - 
+SELECT
+    original_bfs,
+    original_name
+FROM v_municipality_mapping
+WHERE current_bfs = '5226'  -- Capriasca
+AND total_mergers > 0;
+2025-10-13 21:59:03,019 - INFO - 
+See timeline of mergers affecting the data:
+2025-10-13 21:59:03,019 - INFO - 
+SELECT
+    mutation_date,
+    old_bfs_number,
+    old_name,
+    new_bfs_number,
+    new_name,
+    municipalities_in_merger
+FROM v_municipality_evolution
+WHERE was_in_voting_data = 1
+ORDER BY mutation_date DESC;
+2025-10-13 21:59:03,019 - INFO - 
+Compare original vs merged municipality counts per voting:
+2025-10-13 21:59:03,019 - INFO - 
+SELECT
+    voting_date,
+    title_de,
+    original_municipality_count,
+    current_municipality_count,
+    municipalities_merged_count
+FROM v_merger_statistics
+WHERE municipalities_merged_count > 0
+ORDER BY municipalities_merged_count DESC
+LIMIT 10;
+2025-10-13 21:59:03,019 - INFO - 
+Analyze voting patterns for a municipality over time (with mergers handled):
+2025-10-13 21:59:03,019 - INFO - 
+SELECT
+    voting_date,
+    title_de,
+    ja_prozent,
+    stimmbeteiligung,
+    merged_municipality_count
+FROM v_voting_results_current
+WHERE municipality_id = '5226'  -- Capriasca
+ORDER BY voting_date;
+2025-10-13 21:59:03,019 - INFO - 
+Database connection closed
+2025-10-13 21:59:03,019 - INFO - 
+============================================================
+2025-10-13 21:59:03,019 - INFO - SUCCESS!
+2025-10-13 21:59:03,019 - INFO - ============================================================
+2025-10-13 21:59:03,019 - INFO - Views created successfully!
+2025-10-13 21:59:03,019 - INFO - 
+Main view: v_voting_results_current
+2025-10-13 21:59:03,019 - INFO -   Use this for all analysis with current municipal boundaries
+2025-10-13 21:59:03,019 - INFO - 
+Supporting views:
+2025-10-13 21:59:03,019 - INFO -   v_municipality_mapping - BFS number mappings
+2025-10-13 21:59:03,019 - INFO -   v_municipality_evolution - Timeline of changes
+2025-10-13 21:59:03,019 - INFO -   v_merger_statistics - Impact statistics per voting
+2025-10-13 21:59:03,020 - INFO - ============================================================

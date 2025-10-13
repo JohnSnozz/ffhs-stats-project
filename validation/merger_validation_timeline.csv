@@ -1,0 +1,18 @@
+﻿old_bfs_number,old_name,new_bfs_number,new_name,mutation_date,change_category,municipalities_in_merger,was_in_voting_data
+5236,C'za Bidogno/Capriasca/Corticiasca,5392,C'za Bidogno/Capriasca/Corticiasca,2004-01-01,Split,1,1
+5237,C'za Capriasca/Lugaggia,5393,C'za Capriasca/Lugaggia,2004-01-01,Split,1,1
+5238,C'za Corticiasca/Valcolla,5394,C'za Corticiasca/Valcolla,2004-01-01,Merger,1,1
+5142,Agra,5236,Collina d'Oro,2004-04-04,Merger,3,0
+5185,Gentilino,5236,Collina d'Oro,2004-04-04,Merger,3,0
+5201,Montagnola,5236,Collina d'Oro,2004-04-04,Merger,3,0
+5232,Vezio,5237,Alto Malcantone,2005-03-13,Merger,5,0
+5145,Arosio,5237,Alto Malcantone,2005-03-13,Merger,5,0
+5159,Breno,5237,Alto Malcantone,2005-03-13,Merger,5,0
+5183,Fescoggia,5237,Alto Malcantone,2005-03-13,Merger,5,0
+5204,Mugena,5237,Alto Malcantone,2005-03-13,Merger,5,0
+5165,Camignolo,5238,Monteceneri,2010-11-21,Merger,5,0
+5153,Bironico,5238,Monteceneri,2010-11-21,Merger,5,0
+5011,Medeglia,5238,Monteceneri,2010-11-21,Merger,5,0
+5217,Rivera,5238,Monteceneri,2010-11-21,Merger,5,0
+5223,Sigirino,5238,Monteceneri,2010-11-21,Merger,5,0
+5169,Carabietta,5236,Collina d'Oro,2012-04-01,Merger,1,0

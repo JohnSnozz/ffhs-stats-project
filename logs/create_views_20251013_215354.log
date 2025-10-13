@@ -1,0 +1,105 @@
+2025-10-13 21:53:54,097 - INFO - ============================================================
+2025-10-13 21:53:54,097 - INFO - Creating database views for municipal merger handling
+2025-10-13 21:53:54,097 - INFO - ============================================================
+2025-10-13 21:53:54,097 - INFO - Connecting to database: data/swiss_votings.db
+2025-10-13 21:53:54,097 - INFO - Creating simplified municipality mapping view...
+2025-10-13 21:53:54,120 - INFO - Simplified municipality mapping view created successfully
+2025-10-13 21:53:54,120 - INFO - Creating municipality mapping view...
+2025-10-13 21:53:54,139 - INFO - Municipality mapping view created successfully
+2025-10-13 21:53:54,139 - INFO - Creating current voting results view...
+2025-10-13 21:53:54,163 - INFO - Current voting results view created successfully
+2025-10-13 21:53:54,163 - INFO - Creating municipality evolution view...
+2025-10-13 21:53:54,187 - INFO - Municipality evolution view created successfully
+2025-10-13 21:53:54,187 - INFO - Creating voting comparison view...
+2025-10-13 21:53:54,210 - INFO - Voting comparison view created successfully
+2025-10-13 21:53:54,210 - INFO - Creating indexes for view performance...
+2025-10-13 21:53:54,210 - INFO - Indexes created successfully
+2025-10-13 21:53:54,211 - INFO - Verifying views...
+2025-10-13 21:53:54,503 - INFO - Municipality mappings: 2123 total, 2123 historical → 2121 current
+2025-10-13 21:53:54,503 - INFO - Maximum merger depth: 2 levels
+2025-10-13 21:53:56,601 - INFO - Current voting results: 471595 records, 78 votings, 223 proposals
+2025-10-13 21:53:56,601 - INFO - Current municipalities: 2121, max merged: 3
+2025-10-13 21:53:56,889 - INFO - 
+Sample of merged municipalities (cascading mergers):
+2025-10-13 21:53:56,890 - INFO -   5236 Collina d'Oro → 5226 Capriasca (depth: 2)
+2025-10-13 21:53:56,890 - INFO -   5237 Alto Malcantone → 5226 Capriasca (depth: 2)
+2025-10-13 21:53:56,890 - INFO -   5238 Monteceneri → 5394 C'za Corticiasca/Valcolla (depth: 1)
+2025-10-13 21:53:57,603 - INFO - 
+Votings most affected by mergers:
+2025-10-13 21:53:57,604 - INFO -   20000312 Bundesbeschluss über die Justizreform...
+2025-10-13 21:53:57,604 - INFO -     Municipalities: 2111 → 2109 (reduced by 2)
+2025-10-13 21:53:57,604 - INFO -   20000312 Volksinitiative «für Beschleunigung der direkten D...
+2025-10-13 21:53:57,604 - INFO -     Municipalities: 2111 → 2109 (reduced by 2)
+2025-10-13 21:53:57,604 - INFO -   20000312 Volksinitiative «für eine gerechte Vertretung der ...
+2025-10-13 21:53:57,604 - INFO -     Municipalities: 2111 → 2109 (reduced by 2)
+2025-10-13 21:53:57,604 - INFO -   20000312 Volksinitiative «zum Schutze des Menschen vor Mani...
+2025-10-13 21:53:57,604 - INFO -     Municipalities: 2111 → 2109 (reduced by 2)
+2025-10-13 21:53:57,604 - INFO -   20000312 Volksinitiative «für die Halbierung des motorisier...
+2025-10-13 21:53:57,604 - INFO -     Municipalities: 2111 → 2109 (reduced by 2)
+2025-10-13 21:53:57,604 - INFO - 
+============================================================
+2025-10-13 21:53:57,604 - INFO - EXAMPLE QUERIES FOR USING THE VIEWS
+2025-10-13 21:53:57,604 - INFO - ============================================================
+2025-10-13 21:53:57,604 - INFO - 
+Get current voting results for a specific proposal:
+2025-10-13 21:53:57,604 - INFO - 
+SELECT
+    municipality_id,
+    municipality_name,
+    ja_stimmen_absolut,
+    nein_stimmen_absolut,
+    ja_prozent,
+    stimmbeteiligung,
+    merged_municipality_count
+FROM v_voting_results_current
+WHERE proposal_id = 123
+ORDER BY ja_prozent DESC;
+2025-10-13 21:53:57,604 - INFO - 
+Find all municipalities that merged into a specific one:
+2025-10-13 21:53:57,604 - INFO - 
+SELECT
+    original_bfs,
+    original_name,
+    current_bfs,
+    current_name
+FROM v_municipality_mapping_simple
+WHERE current_bfs = '351';  -- Example: Zurich
+2025-10-13 21:53:57,604 - INFO - 
+Track evolution of a specific municipality:
+2025-10-13 21:53:57,604 - INFO - 
+SELECT *
+FROM v_municipality_evolution
+WHERE old_bfs_number = '5586' OR new_bfs_number = '5586'
+ORDER BY mutation_date;
+2025-10-13 21:53:57,604 - INFO - 
+Compare voting patterns before and after merger:
+2025-10-13 21:53:57,604 - INFO - 
+SELECT
+    voting_date,
+    municipality_id,
+    municipality_name,
+    AVG(ja_prozent) as avg_yes_percent,
+    AVG(stimmbeteiligung) as avg_turnout,
+    COUNT(DISTINCT proposal_id) as proposals_count,
+    SUM(merged_municipality_count) - COUNT(*) as additional_merged
+FROM v_voting_results_current
+WHERE municipality_id IN (
+    SELECT DISTINCT current_bfs
+    FROM v_municipality_mapping_simple
+    WHERE total_mergers > 0
+)
+GROUP BY voting_date, municipality_id, municipality_name
+ORDER BY voting_date DESC;
+2025-10-13 21:53:57,604 - INFO - 
+Get all voting results with current municipal structure:
+2025-10-13 21:53:57,604 - INFO - 
+SELECT *
+FROM v_voting_results_current
+WHERE voting_date = '20240609'
+ORDER BY municipality_name;
+2025-10-13 21:53:57,604 - INFO - 
+Database connection closed
+2025-10-13 21:53:57,604 - INFO - ============================================================
+2025-10-13 21:53:57,604 - INFO - Views created successfully!
+2025-10-13 21:53:57,604 - INFO - Use v_voting_results_current for all voting data with current municipalities
+2025-10-13 21:53:57,604 - INFO - ============================================================
