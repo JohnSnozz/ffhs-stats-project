@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+main {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.controls {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.control-group {
+  flex: 1;
+  min-width: 300px;
+}
+
+.control-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.control-group select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.control-group select:hover {
+  border-color: #667eea;
+}
+
+.control-group select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+button {
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.loading {
+  text-align: center;
+  padding: 50px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 20px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #667eea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.results {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.result-panel {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-height: 800px;
+  overflow-y: auto;
+}
+
+.result-panel h2 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #e0e0e0;
+}
+
+.aggregated h2 {
+  color: #2196F3;
+  border-bottom-color: #2196F3;
+}
+
+.merger-info h2 {
+  color: #FF9800;
+  border-bottom-color: #FF9800;
+}
+
+.original h2 {
+  color: #4CAF50;
+  border-bottom-color: #4CAF50;
+}
+
+.municipality-info {
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #f5f5f5;
+  border-radius: 6px;
+  font-size: 1.1rem;
+}
+
+.content {
+  font-size: 0.95rem;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.results-table th,
+.results-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.results-table th {
+  background: #f5f5f5;
+  font-weight: 600;
+  color: #555;
+}
+
+.results-table .number {
+  text-align: right;
+  font-family: 'Courier New', monospace;
+  font-weight: 600;
+}
+
+.results-table .total-row {
+  background: #fff3cd;
+  border-top: 2px solid #ffc107;
+}
+
+.results-table .total-row td {
+  font-weight: bold;
+}
+
+.proposal-title {
+  font-weight: 500;
+}
+
+.proposal-section {
+  margin-bottom: 30px;
+}
+
+.proposal-section h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #4CAF50;
+}
+
+.merger-timeline {
+  padding: 15px;
+  background: #fff8e1;
+  border-radius: 6px;
+  border-left: 4px solid #FF9800;
+}
+
+.merger-timeline h3 {
+  margin-bottom: 15px;
+  color: #FF9800;
+}
+
+.merger-timeline ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.merger-timeline li {
+  padding: 12px;
+  margin-bottom: 10px;
+  background: white;
+  border-radius: 6px;
+  border-left: 3px solid #FF9800;
+}
+
+.merger-date {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.merger-type {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 3px 8px;
+  background: #FF9800;
+  color: white;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.comparison {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comparison h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.success-message {
+  padding: 20px;
+  background: #d4edda;
+  border: 2px solid #28a745;
+  border-radius: 8px;
+  color: #155724;
+}
+
+.success-message h3 {
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  padding: 20px;
+  background: #f8d7da;
+  border: 2px solid #dc3545;
+  border-radius: 8px;
+  color: #721c24;
+}
+
+.error-message h3 {
+  color: #dc3545;
+  margin-bottom: 15px;
+}
+
+.info-message {
+  padding: 20px;
+  background: #d1ecf1;
+  border: 2px solid #17a2b8;
+  border-radius: 8px;
+  color: #0c5460;
+}
+
+.warning {
+  padding: 15px;
+  background: #fff3cd;
+  border-left: 4px solid #ffc107;
+  border-radius: 4px;
+  color: #856404;
+}
+
+.info {
+  padding: 15px;
+  background: #d1ecf1;
+  border-left: 4px solid #17a2b8;
+  border-radius: 4px;
+  color: #0c5460;
+}
+
+.mismatch-detail {
+  margin-top: 15px;
+  padding: 15px;
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.comparison-table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 8px;
+  text-align: right;
+  border: 1px solid #ddd;
+}
+
+.comparison-table th:first-child,
+.comparison-table td:first-child {
+  text-align: left;
+  font-weight: 600;
+}
+
+.comparison-table th {
+  background: #f5f5f5;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+/* Responsive design */
+@media (max-width: 1400px) {
+  .results {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .control-group {
+    min-width: auto;
+  }
+
+  button {
+    width: 100%;
+  }
+}

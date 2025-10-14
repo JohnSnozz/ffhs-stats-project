@@ -1,0 +1,16 @@
+{
+  "name": "voting-validation-app",
+  "version": "1.0.0",
+  "description": "Validation app to compare aggregated database results with original JSON voting data",
+  "type": "module",
+  "scripts": {
+    "start": "bun run server.ts",
+    "dev": "bun run --watch server.ts"
+  },
+  "dependencies": {
+    "bun": "latest"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}

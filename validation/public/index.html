@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voting Data Validation Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🗳️ Swiss Voting Data Validation Tool</h1>
+    <p>Compare aggregated database results with original JSON voting data</p>
+  </header>
+
+  <main>
+    <div class="controls">
+      <div class="control-group">
+        <label for="voting-select">Select Voting Date:</label>
+        <select id="voting-select">
+          <option value="">-- Select a voting --</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label for="municipality-select">Select Municipality (with mergers):</label>
+        <select id="municipality-select">
+          <option value="">-- Select a municipality --</option>
+        </select>
+      </div>
+
+      <button id="compare-btn" disabled>Compare Results</button>
+    </div>
+
+    <div id="loading" class="loading" style="display: none;">
+      <div class="spinner"></div>
+      <p>Loading data...</p>
+    </div>
+
+    <div id="results" class="results" style="display: none;">
+      <div class="result-panel aggregated">
+        <h2>📊 Aggregated Results (Database)</h2>
+        <div class="municipality-info">
+          <strong id="agg-municipality"></strong>
+        </div>
+        <div id="agg-content" class="content"></div>
+      </div>
+
+      <div class="result-panel merger-info">
+        <h2>🔄 Merger Information</h2>
+        <div id="merger-content" class="content"></div>
+      </div>
+
+      <div class="result-panel original">
+        <h2>📝 Original Results (JSON)</h2>
+        <div id="orig-content" class="content"></div>
+      </div>
+    </div>
+
+    <div id="comparison" class="comparison" style="display: none;">
+      <h2>✅ Validation Summary</h2>
+      <div id="comparison-content"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>FFHS Stats Project - Municipal Merger Validation Tool</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
