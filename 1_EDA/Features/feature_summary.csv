@@ -1,0 +1,18 @@
+feature,n_kategorien,haeufigste_kategorie,anteil_pct
+grossregionen_der_schweiz,7,Espace Mittelland,30.0
+agglomerationen_2020,85,keine Agglomerationsgemeinde und keine K,48.7
+agglomerationsgroessenklasse,6,keine Agglomerationszugehörigkeit,51.6
+raum_mit_staedtischem_charakter,7,Ländliche Gemeinde ohne städtischen Char,32.5
+statistische_staedte,2,nein,91.8
+stadt_land_typologie,3,Ländlich,48.4
+gemeindetypologie_9_typen,9,Periurbane Gemeinde geringer Dichte,20.1
+gemeindetypologie_25_typen,25,Periurbane Dienstleistungsgemeinde mittl,10.1
+arbeitsmarktgrossregionen_2018,16,Region Zürich,14.2
+arbeitsmarktregionen_2018,101,Aarau–Olten,4.4
+sprachgebiete,4,Deutsch,65.1
+berggebiete,2,Gemeinden ausseralb der Berggebiete,63.1
+urbanisierungsgrad_degurba_eurostat,3,Geringbesiedeltes Gebiet,48.2
+erweiterte_staedte_2021_greater_cities_eurostat,18,Nicht zu einer erweiterten Stadt zugehör,93.6
+erweiterte_staedte_2011_greater_cities_eurostat,13,Nicht zu einer erweiterten Stadt zugehör,95.4
+funktionale_staedtische_gebiete_2021_fua_eurostat,15,Nicht zu einem funktionalen städtischen ,45.3
+funktionale_staedtische_gebiete_2014_fua_eurostat,11,Nicht zu einem funktionalen städtischen ,51.7

@@ -1,0 +1,328 @@
+feature,code,label,count,percent
+grossregionen_der_schweiz,1,Région lémanique,467,22.13
+grossregionen_der_schweiz,2,Espace Mittelland,632,29.95
+grossregionen_der_schweiz,3,Nordwestschweiz,285,13.51
+grossregionen_der_schweiz,4,Zürich,160,7.58
+grossregionen_der_schweiz,5,Ostschweiz,309,14.64
+grossregionen_der_schweiz,6,Zentralschweiz,157,7.44
+grossregionen_der_schweiz,7,Ticino,100,4.74
+agglomerationen_2020,0,keine Agglomerationsgemeinde und keine Kerngemeinde ausserhalb von Agglomerationen,1027,48.67
+agglomerationen_2020,230,Winterthur,8,0.38
+agglomerationen_2020,261,Zürich,148,7.01
+agglomerationen_2020,351,Bern,67,3.18
+agglomerationen_2020,371,Biel/Bienne,24,1.14
+agglomerationen_2020,404,Burgdorf,3,0.14
+agglomerationen_2020,581,Interlaken,10,0.47
+agglomerationen_2020,942,Thun,12,0.57
+agglomerationen_2020,1061,Luzern,19,0.9
+agglomerationen_2020,1201,Altdorf (UR),10,0.47
+agglomerationen_2020,1344,Lachen,4,0.19
+agglomerationen_2020,1630,Glarus,2,0.09
+agglomerationen_2020,1711,Zug,16,0.76
+agglomerationen_2020,2125,Bulle,7,0.33
+agglomerationen_2020,2196,Fribourg,18,0.85
+agglomerationen_2020,2546,Grenchen,3,0.14
+agglomerationen_2020,2581,Olten – Zofingen,20,0.95
+agglomerationen_2020,2601,Solothurn,23,1.09
+agglomerationen_2020,2701,Basel (CH),111,5.26
+agglomerationen_2020,2939,Schaffhausen,16,0.76
+agglomerationen_2020,3203,St. Gallen,24,1.14
+agglomerationen_2020,3251,Rheintal (CH),10,0.47
+agglomerationen_2020,3271,Buchs (SG) (CH),4,0.19
+agglomerationen_2020,3293,Mels – Sargans,3,0.14
+agglomerationen_2020,3336,Rapperswil-Jona – Rüti,3,0.14
+agglomerationen_2020,3425,Wil (SG),9,0.43
+agglomerationen_2020,3901,Chur,8,0.38
+agglomerationen_2020,4001,Aarau,21,1.0
+agglomerationen_2020,4021,Baden – Brugg,13,0.62
+agglomerationen_2020,4082,Wohlen (AG),2,0.09
+agglomerationen_2020,4141,Reinach (AG),3,0.14
+agglomerationen_2020,4201,Lenzburg,5,0.24
+agglomerationen_2020,4260,Stein (AG) (CH),4,0.19
+agglomerationen_2020,4401,Arbon – Rorschach,9,0.43
+agglomerationen_2020,4436,Amriswil – Romanshorn,3,0.14
+agglomerationen_2020,4566,Frauenfeld,1,0.05
+agglomerationen_2020,4671,Kreuzlingen (CH),2,0.09
+agglomerationen_2020,5002,Bellinzona,6,0.28
+agglomerationen_2020,5113,Locarno (CH),19,0.9
+agglomerationen_2020,5192,Lugano (CH),42,1.99
+agglomerationen_2020,5250,Chiasso – Mendrisio (CH),12,0.57
+agglomerationen_2020,5586,Lausanne,104,4.93
+agglomerationen_2020,5890,Vevey – Montreux,9,0.43
+agglomerationen_2020,5938,Yverdon-les-Bains,15,0.71
+agglomerationen_2020,6002,Brig – Visp,25,1.18
+agglomerationen_2020,6136,Martigny,3,0.14
+agglomerationen_2020,6153,Monthey,3,0.14
+agglomerationen_2020,6248,Sierre,3,0.14
+agglomerationen_2020,6266,Sion,17,0.81
+agglomerationen_2020,6421,La Chaux-de-Fonds – Le Locle (CH),8,0.38
+agglomerationen_2020,6458,Neuchâtel,11,0.52
+agglomerationen_2020,6621,Genève (CH),86,4.08
+agglomerationen_2020,6711,Delémont (CH),13,0.62
+agglomerationen_2020,90306,Lyss,1,0.05
+agglomerationen_2020,90329,Langenthal,2,0.09
+agglomerationen_2020,90412,Kirchberg (BE),4,0.19
+agglomerationen_2020,90768,Spiez,1,0.05
+agglomerationen_2020,90979,Herzogenbuchsee,2,0.09
+agglomerationen_2020,91031,Hochdorf,1,0.05
+agglomerationen_2020,91103,Sursee,3,0.14
+agglomerationen_2020,91301,Einsiedeln,1,0.05
+agglomerationen_2020,91331,Küssnacht (SZ),1,0.05
+agglomerationen_2020,91362,Arth,1,0.05
+agglomerationen_2020,91372,Schwyz,1,0.05
+agglomerationen_2020,91407,Sarnen,1,0.05
+agglomerationen_2020,91509,Stans,3,0.14
+agglomerationen_2020,92275,Murten,5,0.24
+agglomerationen_2020,92407,Oensingen,2,0.09
+agglomerationen_2020,93101,Appenzell,2,0.09
+agglomerationen_2020,93339,Uznach,3,0.14
+agglomerationen_2020,93379,Wattwil,2,0.09
+agglomerationen_2020,93787,St. Moritz,1,0.05
+agglomerationen_2020,93851,Davos,1,0.05
+agglomerationen_2020,93955,Landquart,2,0.09
+agglomerationen_2020,94035,Niederrohrdorf – Oberrohrdorf,4,0.19
+agglomerationen_2020,94163,Frick,3,0.14
+agglomerationen_2020,94282,Rothrist,1,0.05
+agglomerationen_2020,94304,Döttingen – Böttstein,3,0.14
+agglomerationen_2020,94946,Weinfelden,1,0.05
+agglomerationen_2020,95401,Aigle,1,0.05
+agglomerationen_2020,95414,Villeneuve (VD),3,0.14
+agglomerationen_2020,95822,Payerne,2,0.09
+agglomerationen_2020,96253,Crans-Montana,1,0.05
+agglomerationen_2020,96300,Zermatt,1,0.05
+agglomerationen_2020,96800,Porrentruy,2,0.09
+agglomerationsgroessenklasse,0,keine Agglomerationszugehörigkeit,1089,51.61
+agglomerationsgroessenklasse,1,>= 500'000 Einwohner/innen,345,16.35
+agglomerationsgroessenklasse,2,250'000 - 499'999 Einwohner/innen,171,8.1
+agglomerationsgroessenklasse,3,100'000 - 249'999 Einwohner/innen,198,9.38
+agglomerationsgroessenklasse,4,50'000 - 99'999 Einwohner/innen,176,8.34
+agglomerationsgroessenklasse,5,< 50'000 Einwohner/innen,131,6.21
+raum_mit_staedtischem_charakter,0,Ländliche Gemeinde ohne städtischen Charakter,686,32.51
+raum_mit_staedtischem_charakter,1,Agglomerationskerngemeinde (Kernstadt),58,2.75
+raum_mit_staedtischem_charakter,2,Agglomerationskerngemeinde (Hauptkern),318,15.07
+raum_mit_staedtischem_charakter,3,Agglomerationskerngemeinde (Nebenkern),71,3.36
+raum_mit_staedtischem_charakter,4,Agglomerationsgürtelgemeinde,574,27.2
+raum_mit_staedtischem_charakter,5,Mehrfach orientierte Gemeinde,341,16.16
+raum_mit_staedtischem_charakter,6,Kerngemeinde ausserhalb Agglomerationen,62,2.94
+statistische_staedte,0,nein,1937,91.8
+statistische_staedte,1,ja (Stadt),173,8.2
+stadt_land_typologie,1,Städtisch,509,24.12
+stadt_land_typologie,2,Intermediär (dichter periurbaner Raum und ländliche Zentren),580,27.49
+stadt_land_typologie,3,Ländlich,1021,48.39
+gemeindetypologie_9_typen,11,Städtische Gemeinde einer grossen Agglomeration,174,8.25
+gemeindetypologie_9_typen,12,Städtische Gemeinde einer mittelgrossen Agglomeration,200,9.48
+gemeindetypologie_9_typen,13,Städtische Gemeinde einer kleinen oder ausserhalb einer Agglomeration,135,6.4
+gemeindetypologie_9_typen,21,Periurbane Gemeinde hoher Dichte,120,5.69
+gemeindetypologie_9_typen,22,Periurbane Gemeinde mittlerer Dichte,372,17.63
+gemeindetypologie_9_typen,23,Periurbane Gemeinde geringer Dichte,424,20.09
+gemeindetypologie_9_typen,31,Ländliche Zentrumsgemeinde,88,4.17
+gemeindetypologie_9_typen,32,Ländliche zentral gelegene Gemeinde,388,18.39
+gemeindetypologie_9_typen,33,Ländliche periphere Gemeinde,209,9.91
+gemeindetypologie_25_typen,111,Kernstadt einer grossen Agglomeration,5,0.24
+gemeindetypologie_25_typen,112,Städtische Arbeitsplatzgemeinde einer grossen Agglomeration,62,2.94
+gemeindetypologie_25_typen,113,Städtische Wohngemeinde einer grossen Agglomeration,107,5.07
+gemeindetypologie_25_typen,121,Kernstadt einer mittelgrossen Agglomeration,25,1.18
+gemeindetypologie_25_typen,122,Städtische Arbeitsplatzgemeinde einer mittelgrossen Agglomeration,69,3.27
+gemeindetypologie_25_typen,123,Städtische Wohngemeinde einer mittelgrossen Agglomeration,106,5.02
+gemeindetypologie_25_typen,134,Städtische Tourismusgemeinde einer kleinen oder ausserhalb einer Agglomeration,15,0.71
+gemeindetypologie_25_typen,136,Städtische Industriegemeinde einer kleinen oder ausserhalb einer Agglomeration,58,2.75
+gemeindetypologie_25_typen,137,Städtische Dienstleistungsgemeinde einer kleinen oder ausserhalb einer Agglomeration,62,2.94
+gemeindetypologie_25_typen,216,Periurbane Industriegemeinde hoher Dichte,55,2.61
+gemeindetypologie_25_typen,217,Periurbane Dienstleistungsgemeinde hoher Dichte,65,3.08
+gemeindetypologie_25_typen,226,Periurbane Industriegemeinde mittlerer Dichte,159,7.54
+gemeindetypologie_25_typen,227,Periurbane Dienstleistungsgemeinde mittlerer Dichte,213,10.09
+gemeindetypologie_25_typen,235,Periurbane Agrargemeinde geringer Dichte,128,6.07
+gemeindetypologie_25_typen,236,Periurbane Industriegemeinde geringer Dichte,112,5.31
+gemeindetypologie_25_typen,237,Periurbane Dienstleistungsgemeinde geringer Dichte,184,8.72
+gemeindetypologie_25_typen,314,Tourismusgemeinde eines ländlichen Zentrums,23,1.09
+gemeindetypologie_25_typen,316,Industriegemeinde eines ländlichen Zentrums,39,1.85
+gemeindetypologie_25_typen,317,Dienstleistungsgemeinde eines ländlichen Zentrums,26,1.23
+gemeindetypologie_25_typen,325,Ländliche zentral gelegene Agrargemeinde,117,5.55
+gemeindetypologie_25_typen,326,Ländliche zentral gelegene Industriegemeinde,130,6.16
+gemeindetypologie_25_typen,327,Ländliche zentral gelegene Dienstleistungsgemeinde,141,6.68
+gemeindetypologie_25_typen,334,Ländliche periphere Tourismusgemeinde,33,1.56
+gemeindetypologie_25_typen,335,Ländliche periphere Agrargemeinde,46,2.18
+gemeindetypologie_25_typen,338,Ländliche periphere Mischgemeinde,130,6.16
+arbeitsmarktgrossregionen_2018,1,Region Genf,88,4.17
+arbeitsmarktgrossregionen_2018,2,Region Lausanne,259,12.27
+arbeitsmarktgrossregionen_2018,3,Region Neuenburg,51,2.42
+arbeitsmarktgrossregionen_2018,4,Region Freiburg,111,5.26
+arbeitsmarktgrossregionen_2018,5,Region Biel–Jura,179,8.48
+arbeitsmarktgrossregionen_2018,6,Region Bern,129,6.11
+arbeitsmarktgrossregionen_2018,7,Westalpen,108,5.12
+arbeitsmarktgrossregionen_2018,8,Region Basel,139,6.59
+arbeitsmarktgrossregionen_2018,9,Berner Oberland,87,4.12
+arbeitsmarktgrossregionen_2018,10,Aareland,132,6.26
+arbeitsmarktgrossregionen_2018,11,Zentralschweiz,164,7.77
+arbeitsmarktgrossregionen_2018,12,Region Zürich,300,14.22
+arbeitsmarktgrossregionen_2018,13,Sopraceneri,57,2.7
+arbeitsmarktgrossregionen_2018,14,Sottoceneri,55,2.61
+arbeitsmarktgrossregionen_2018,15,Bodenseeregion,149,7.06
+arbeitsmarktgrossregionen_2018,16,Ostalpen,102,4.83
+arbeitsmarktregionen_2018,1011,Vernier–Lancy,21,1.0
+arbeitsmarktregionen_2018,1012,Genève,1,0.05
+arbeitsmarktregionen_2018,1013,Le Grand-Saconnex,15,0.71
+arbeitsmarktregionen_2018,1014,Nyon,35,1.66
+arbeitsmarktregionen_2018,1015,Thônex–Chêne-Bougeries,16,0.76
+arbeitsmarktregionen_2018,2010,Le Chenit,11,0.52
+arbeitsmarktregionen_2018,2021,Rolle–Saint-Prex,20,0.95
+arbeitsmarktregionen_2018,2022,Renens–Ecublens,49,2.32
+arbeitsmarktregionen_2018,2023,Prilly–Le Mont-sur-Lausanne,37,1.75
+arbeitsmarktregionen_2018,2024,Lausanne,28,1.33
+arbeitsmarktregionen_2018,2030,Yverdon-les-Bains,65,3.08
+arbeitsmarktregionen_2018,2040,Monthey,15,0.71
+arbeitsmarktregionen_2018,2050,Montreux–Vevey,25,1.18
+arbeitsmarktregionen_2018,2060,Aigle,9,0.43
+arbeitsmarktregionen_2018,3010,Val-de-Travers,3,0.14
+arbeitsmarktregionen_2018,3020,La Chaux-de-Fonds,17,0.81
+arbeitsmarktregionen_2018,3030,Neuchâtel,19,0.9
+arbeitsmarktregionen_2018,3040,Saignelégier–Le Noirmont,12,0.57
+arbeitsmarktregionen_2018,4010,Payerne–Estavayer,37,1.75
+arbeitsmarktregionen_2018,4020,Bulle,34,1.61
+arbeitsmarktregionen_2018,4030,Fribourg,40,1.9
+arbeitsmarktregionen_2018,5010,Porrentruy,19,0.9
+arbeitsmarktregionen_2018,5020,Tramelan–Valbirse,15,0.71
+arbeitsmarktregionen_2018,5030,Biel/Bienne,54,2.56
+arbeitsmarktregionen_2018,5040,Delémont,20,0.95
+arbeitsmarktregionen_2018,5050,Moutier,9,0.43
+arbeitsmarktregionen_2018,5060,Solothurn,62,2.94
+arbeitsmarktregionen_2018,6011,Murten,26,1.23
+arbeitsmarktregionen_2018,6012,Bern,20,0.95
+arbeitsmarktregionen_2018,6013,Münsingen–Belp,17,0.81
+arbeitsmarktregionen_2018,6014,Zollikofen–Münchenbuchsee,14,0.66
+arbeitsmarktregionen_2018,6015,Konolfingen,12,0.57
+arbeitsmarktregionen_2018,6020,Burgdorf,29,1.37
+arbeitsmarktregionen_2018,6030,Langnau im Emmental,11,0.52
+arbeitsmarktregionen_2018,7010,Martigny,14,0.66
+arbeitsmarktregionen_2018,7020,Bagnes,5,0.24
+arbeitsmarktregionen_2018,7030,Sion,17,0.81
+arbeitsmarktregionen_2018,7040,Crans-Montana,3,0.14
+arbeitsmarktregionen_2018,7050,Sierre,7,0.33
+arbeitsmarktregionen_2018,7060,Leuk,17,0.81
+arbeitsmarktregionen_2018,7070,Zermatt,5,0.24
+arbeitsmarktregionen_2018,7080,Visp,20,0.95
+arbeitsmarktregionen_2018,7090,Brig-Glis,20,0.95
+arbeitsmarktregionen_2018,8011,Laufen,18,0.85
+arbeitsmarktregionen_2018,8012,Reinach (BL)–Allschwil,35,1.66
+arbeitsmarktregionen_2018,8013,Basel,3,0.14
+arbeitsmarktregionen_2018,8014,Liestal,55,2.61
+arbeitsmarktregionen_2018,8015,Rheinfelden,28,1.33
+arbeitsmarktregionen_2018,9010,Saanen–Château d'Oex,6,0.28
+arbeitsmarktregionen_2018,9020,Zweisimmen–Lenk,6,0.28
+arbeitsmarktregionen_2018,9030,Thun,41,1.94
+arbeitsmarktregionen_2018,9040,Frutigen,6,0.28
+arbeitsmarktregionen_2018,9050,Interlaken,19,0.9
+arbeitsmarktregionen_2018,9060,Meiringen,9,0.43
+arbeitsmarktregionen_2018,10010,Langenthal,39,1.85
+arbeitsmarktregionen_2018,10020,Aarau–Olten,93,4.41
+arbeitsmarktregionen_2018,11010,Escholzmatt-Marbach–Schüpfheim,7,0.33
+arbeitsmarktregionen_2018,11020,Sursee,35,1.66
+arbeitsmarktregionen_2018,11030,Sarnen,6,0.28
+arbeitsmarktregionen_2018,11040,Luzern,30,1.42
+arbeitsmarktregionen_2018,11050,Stans,13,0.62
+arbeitsmarktregionen_2018,11060,Zug,38,1.8
+arbeitsmarktregionen_2018,11070,Altdorf,18,0.85
+arbeitsmarktregionen_2018,11080,Schwyz–Einsiedeln,17,0.81
+arbeitsmarktregionen_2018,12010,Baden,76,3.6
+arbeitsmarktregionen_2018,12020,Schaffhausen,37,1.75
+arbeitsmarktregionen_2018,12031,Dietikon–Schlieren,30,1.42
+arbeitsmarktregionen_2018,12032,Kloten,37,1.75
+arbeitsmarktregionen_2018,12033,Zürich,1,0.05
+arbeitsmarktregionen_2018,12034,Horgen–Wädenswil,18,0.85
+arbeitsmarktregionen_2018,12035,Küsnacht (ZH)–Meilen,6,0.28
+arbeitsmarktregionen_2018,12036,Uster–Dübendorf,18,0.85
+arbeitsmarktregionen_2018,12037,Wetzikon (ZH),16,0.76
+arbeitsmarktregionen_2018,12038,Rapperswil-Jona,5,0.24
+arbeitsmarktregionen_2018,12040,Winterthur,37,1.75
+arbeitsmarktregionen_2018,12050,Freienbach–Glarus,19,0.9
+arbeitsmarktregionen_2018,13010,Faido,5,0.24
+arbeitsmarktregionen_2018,13020,Locarno,27,1.28
+arbeitsmarktregionen_2018,13030,Biasca,8,0.38
+arbeitsmarktregionen_2018,13040,Bellinzona,17,0.81
+arbeitsmarktregionen_2018,14010,Lugano,42,1.99
+arbeitsmarktregionen_2018,14020,Mendrisio,13,0.62
+arbeitsmarktregionen_2018,15010,Wil (SG),23,1.09
+arbeitsmarktregionen_2018,15020,Frauenfeld,40,1.9
+arbeitsmarktregionen_2018,15030,Kreuzlingen,16,0.76
+arbeitsmarktregionen_2018,15040,Wattwil,7,0.33
+arbeitsmarktregionen_2018,15050,St. Gallen,44,2.09
+arbeitsmarktregionen_2018,15060,Appenzell,5,0.24
+arbeitsmarktregionen_2018,15070,Altstätten,5,0.24
+arbeitsmarktregionen_2018,15080,Widnau–Au,9,0.43
+arbeitsmarktregionen_2018,16010,Ilanz/Glion,17,0.81
+arbeitsmarktregionen_2018,16020,Mels–Sargans,8,0.38
+arbeitsmarktregionen_2018,16030,Thusis,19,0.9
+arbeitsmarktregionen_2018,16040,Buchs (SG),6,0.28
+arbeitsmarktregionen_2018,16050,Chur,15,0.71
+arbeitsmarktregionen_2018,16060,Vaz/Obervaz,6,0.28
+arbeitsmarktregionen_2018,16070,St. Moritz,5,0.24
+arbeitsmarktregionen_2018,16080,Klosters-Serneus,10,0.47
+arbeitsmarktregionen_2018,16090,Davos,2,0.09
+arbeitsmarktregionen_2018,16100,Samedan–Pontresina,11,0.52
+arbeitsmarktregionen_2018,16110,Scuol,3,0.14
+sprachgebiete,1,Deutsch,1374,65.12
+sprachgebiete,2,Französisch,606,28.72
+sprachgebiete,3,Italienisch,115,5.45
+sprachgebiete,4,Rätoromanisch,15,0.71
+berggebiete,0,Gemeinden ausseralb der Berggebiete,1332,63.13
+berggebiete,1,Gemeinden im Berggebiet,778,36.87
+urbanisierungsgrad_degurba_eurostat,1,Dichtbesiedeltes Gebiet,135,6.4
+urbanisierungsgrad_degurba_eurostat,2,Mitteldicht besiedeltes Gebiet,959,45.45
+urbanisierungsgrad_degurba_eurostat,3,Geringbesiedeltes Gebiet,1016,48.15
+erweiterte_staedte_2021_greater_cities_eurostat,0,Nicht zu einer erweiterten Stadt zugehörig,1975,93.6
+erweiterte_staedte_2021_greater_cities_eurostat,230950,Winterthur,1,0.05
+erweiterte_staedte_2021_greater_cities_eurostat,261950,Zürich (erweiterte Stadt),26,1.23
+erweiterte_staedte_2021_greater_cities_eurostat,351950,Bern (erweiterte Stadt),7,0.33
+erweiterte_staedte_2021_greater_cities_eurostat,371950,Biel/Bienne (erweiterte Stadt),5,0.24
+erweiterte_staedte_2021_greater_cities_eurostat,942950,Thun (erweiterte Stadt),5,0.24
+erweiterte_staedte_2021_greater_cities_eurostat,1061950,Luzern (erweiterte Stadt),5,0.24
+erweiterte_staedte_2021_greater_cities_eurostat,1711950,Zug (erweiterte Stadt),4,0.19
+erweiterte_staedte_2021_greater_cities_eurostat,2196950,Freiburg (erweiterte Stadt),5,0.24
+erweiterte_staedte_2021_greater_cities_eurostat,2701950,Basel (erweiterte Stadt),15,0.71
+erweiterte_staedte_2021_greater_cities_eurostat,3203950,St. Gallen (erweiterte Stadt),2,0.09
+erweiterte_staedte_2021_greater_cities_eurostat,4001950,Aarau (erweiterte Stadt),4,0.19
+erweiterte_staedte_2021_greater_cities_eurostat,4671950,Konstanz – Kreuzlingen (erweiterte Stadt),2,0.09
+erweiterte_staedte_2021_greater_cities_eurostat,5192950,Lugano (erweiterte Stadt),11,0.52
+erweiterte_staedte_2021_greater_cities_eurostat,5250950,Como – Chiasso (erweiterte Stadt),3,0.14
+erweiterte_staedte_2021_greater_cities_eurostat,5586950,Lausanne (erweiterte Stadt),19,0.9
+erweiterte_staedte_2021_greater_cities_eurostat,5886950,Montreux – Vevey (erweiterte Stadt),5,0.24
+erweiterte_staedte_2021_greater_cities_eurostat,6621950,Genf (erweiterte Stadt),16,0.76
+erweiterte_staedte_2011_greater_cities_eurostat,0,Nicht zu einer erweiterten Stadt zugehörig,2012,95.36
+erweiterte_staedte_2011_greater_cities_eurostat,230950,Winterthur,1,0.05
+erweiterte_staedte_2011_greater_cities_eurostat,261950,Zürich: erweiterte Stadt,22,1.04
+erweiterte_staedte_2011_greater_cities_eurostat,351950,Bern: erweiterte Stadt,7,0.33
+erweiterte_staedte_2011_greater_cities_eurostat,371950,Biel/Bienne: erweiterte Stadt,5,0.24
+erweiterte_staedte_2011_greater_cities_eurostat,942950,Thun: erweiterte Stadt,3,0.14
+erweiterte_staedte_2011_greater_cities_eurostat,1061950,Luzern: erweiterte Stadt,5,0.24
+erweiterte_staedte_2011_greater_cities_eurostat,1711950,Zug: erweiterte Stadt,3,0.14
+erweiterte_staedte_2011_greater_cities_eurostat,2701950,Basel: erweiterte Stadt,14,0.66
+erweiterte_staedte_2011_greater_cities_eurostat,3203950,St. Gallen,1,0.05
+erweiterte_staedte_2011_greater_cities_eurostat,5192950,Lugano: erweiterte Stadt,11,0.52
+erweiterte_staedte_2011_greater_cities_eurostat,5586950,Lausanne: erweiterte Stadt,12,0.57
+erweiterte_staedte_2011_greater_cities_eurostat,6621950,Genf: erweiterte Stadt,14,0.66
+funktionale_staedtische_gebiete_2021_fua_eurostat,0,Nicht zu einem funktionalen städtischen Gebiet zugehörig,956,45.31
+funktionale_staedtische_gebiete_2021_fua_eurostat,261960,Zürich (funktionales städtisches Gebiet),259,12.27
+funktionale_staedtische_gebiete_2021_fua_eurostat,351960,Bern (funktionales städtisches Gebiet),178,8.44
+funktionale_staedtische_gebiete_2021_fua_eurostat,371960,Biel/Bienne (funktionales städtisches Gebiet),45,2.13
+funktionale_staedtische_gebiete_2021_fua_eurostat,1061960,Luzern (funktionales städtisches Gebiet),40,1.9
+funktionale_staedtische_gebiete_2021_fua_eurostat,1711960,Zug (funktionales städtisches Gebiet),21,1.0
+funktionale_staedtische_gebiete_2021_fua_eurostat,2196960,Freiburg (funktionales städtisches Gebiet),41,1.94
+funktionale_staedtische_gebiete_2021_fua_eurostat,2701960,Basel (funktionales städtisches Gebiet),121,5.73
+funktionale_staedtische_gebiete_2021_fua_eurostat,3203960,St. Gallen (funktionales städtisches Gebiet),46,2.18
+funktionale_staedtische_gebiete_2021_fua_eurostat,4001960,Aarau (funktionales städtisches Gebiet),28,1.33
+funktionale_staedtische_gebiete_2021_fua_eurostat,4671960,Konstanz – Kreuzlingen (funktionales städtisches Gebiet),10,0.47
+funktionale_staedtische_gebiete_2021_fua_eurostat,5192960,Lugano (funktionales städtisches Gebiet),47,2.23
+funktionale_staedtische_gebiete_2021_fua_eurostat,5250960,Como – Chiasso (funktionales städtisches Gebiet),7,0.33
+funktionale_staedtische_gebiete_2021_fua_eurostat,5586960,Lausanne (funktionales städtisches Gebiet),219,10.38
+funktionale_staedtische_gebiete_2021_fua_eurostat,6621960,Genf (funktionales städtisches Gebiet),92,4.36
+funktionale_staedtische_gebiete_2014_fua_eurostat,0,Nicht zu einem funktionalen städtischen Gebiet zugehörig,1091,51.71
+funktionale_staedtische_gebiete_2014_fua_eurostat,261960,Zürich: funktionales städtisches Gebiet,246,11.66
+funktionale_staedtische_gebiete_2014_fua_eurostat,351960,Bern: funktionales städtisches Gebiet,174,8.25
+funktionale_staedtische_gebiete_2014_fua_eurostat,371960,Biel/Bienne: funktionales städtisches Gebiet,45,2.13
+funktionale_staedtische_gebiete_2014_fua_eurostat,1061960,Luzern: funktionales städtisches Gebiet,40,1.9
+funktionale_staedtische_gebiete_2014_fua_eurostat,1711960,Zug: funktionales städtisches Gebiet,19,0.9
+funktionale_staedtische_gebiete_2014_fua_eurostat,2701960,Basel: funktionales städtisches Gebiet,123,5.83
+funktionale_staedtische_gebiete_2014_fua_eurostat,3203960,St. Gallen: funktionales städtisches Gebiet,44,2.09
+funktionale_staedtische_gebiete_2014_fua_eurostat,5192960,Lugano: funktionales städtisches Gebiet,50,2.37
+funktionale_staedtische_gebiete_2014_fua_eurostat,5586960,Lausanne: funktionales städtisches Gebiet,185,8.77
+funktionale_staedtische_gebiete_2014_fua_eurostat,6621960,Genf: funktionales städtisches Gebiet,93,4.41

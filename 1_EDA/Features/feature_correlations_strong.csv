@@ -1,0 +1,21 @@
+Feature 1,Feature 2,Korrelation,Interpretation
+steuerbares_einkommen_pro_kopf,pct_einkommen_ueber_100k,0.9252680847622283,positiv
+bevoelkerungsdichte,siedlungsflaeche_pct,0.844092556575136,positiv
+anteil_0_19_jahre,haushaltsgroesse,0.79514082712837,positiv
+anteil_0_19_jahre,anteil_65_plus_jahre,-0.7404526076637489,negativ
+pct_einkommen_ueber_100k,pct_einkommen_unter_40k,-0.7326172439881459,negativ
+anteil_20_64_jahre,anteil_65_plus_jahre,-0.6965108400881017,negativ
+waehleranteil_svp,waehleranteil_fdp,-0.6762401202310582,negativ
+steuerbares_einkommen_pro_kopf,pct_einkommen_unter_40k,-0.6465744196471312,negativ
+anteil_65_plus_jahre,haushaltsgroesse,-0.6236940530498225,negativ
+auslaenderanteil,siedlungsflaeche_pct,0.6190295760240654,positiv
+pct_einkommen_ueber_100k,waehleranteil_glp,0.6174894279085189,positiv
+steuerbares_einkommen_pro_kopf,waehleranteil_glp,0.5755290746629385,positiv
+pct_einkommen_unter_40k,waehleranteil_glp,-0.5701684681079106,negativ
+anteil_65_plus_jahre,sterbeziffer,0.553290185034012,positiv
+haushaltsgroesse,pct_einkommen_ueber_100k,0.5494815627968358,positiv
+auslaenderanteil,waehleranteil_svp,-0.5445315067047002,negativ
+landwirtschaftsflaeche_pct,wald_pct,-0.5444719666576564,negativ
+bevoelkerungsdichte,auslaenderanteil,0.5307913377666994,positiv
+landwirtschaftsflaeche_pct,waehleranteil_cvp,-0.5278718278493112,negativ
+waehleranteil_svp,waehleranteil_sp,-0.517839664806547,negativ

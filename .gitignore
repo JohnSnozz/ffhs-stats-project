@@ -1,8 +1,31 @@
-# Data directories
-data/
-swiss_votings.db
+# Python & Jupyter
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.ipynb_checkpoints/
 
-# Claude Code configuration
-CLAUDE.md
+# Environment & IDE
+.venv/
+venv/
+.conda/
+*.swp
+*.swo
+*~
+.DS_Store
 
-old/
+# Large Data Files (not tracked in git)
+data/processed/*.db
+data/exports/*.csv
+data/raw/votes/*.json
+
+# Generated Outputs
+output/
+*.log
+
+# Archive folder (old experiments)
+_archive/
+
+# Claude Code
+.claude/

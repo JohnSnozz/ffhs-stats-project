@@ -1,0 +1,224 @@
+proposal_id,PC1,PC2,PC3,title,date
+1,0.04829632072232902,0.06632204224776296,0.06427841318090208,Bundesbeschluss über die Justizreform,20000312
+2,-0.019236125621863585,-0.03005490810209264,0.06094039852073019,Volksinitiative «für Beschleunigung der direkten Demokratie (Behandlungsfristen für Volksinitiativen in Form eines ausgearbeiteten Entwurfs)»,20000312
+3,0.07753196971081913,-0.028155834082813185,0.048299925755037894,Volksinitiative «für eine gerechte Vertretung der Frauen in den Bundesbehörden (Initiative 3. März)»,20000312
+4,-0.062044498093318474,-0.018725317389376956,0.11722854779104902,Volksinitiative «zum Schutze des Menschen vor Manipulationen in der Fortpflanzungstechnologie (Initiative für menschenwürdige Fortpflanzung [FMF])»,20000312
+5,0.011641394273136648,0.03313663038293122,0.1660857684578029,Volksinitiative «für die Halbierung des motorisierten Strassenverkehrs zur Erhaltung und Verbesserung von Lebensräumen (Verkehrshalbierungs-Initiative)»,20000312
+6,0.08692890465738072,0.061673470724085064,-0.016831792696755228,Bundesbeschluss über die Genehmigung der sektoriellen Abkommen zwischen der Schweizerischen Eidgenossenschaft einerseits und der Europäischen Gemeinschaft andererseits,20000521
+7,0.023517428827138708,0.02915411663140549,0.12068227483312484,Volksinitiative «für einen Solarrappen»,20000924
+8,0.035773364270351465,0.05548745290457003,0.08084795421142787,Verfassungsartikel über eine Förderabgabe für erneuerbare Energien,20000924
+9,-0.005061470216213235,-0.021035701733446342,0.13486134990454185,Solarinitiative und Gegenvorschlag: Stichfrage,20000924
+10,0.004705747465994213,0.06759459114321881,0.13481560608234713,Verfassungsartikel über eine Energielenkungsabgabe für die Umwelt,20000924
+11,-0.0846887481978027,-0.03392678172894066,0.057557891354630665,Volksinitiative «für eine Regelung der Zuwanderung»,20000924
+12,0.01635870483011923,-0.07225475263604518,0.08086223970577704,Volksinitiative «Mehr Rechte für das Volk dank dem Referendum mit Gegenvorschlag»,20000924
+13,0.08033667026922597,-0.08909555834287054,-0.009168213320974585,Volksinitiative «für eine Flexibilisierung der AHV - gegen die Erhöhung des Rentenalters für Frauen»,20001126
+14,0.07679939160222221,-0.0973758086706638,-0.01405720532550806,Volksinitiative «für ein flexibles Rentenalter ab 62 für Frau und Mann»,20001126
+15,0.09197991525222804,-0.05417105443087861,0.007947400136351453,Volksinitiative «Sparen beim Militär und der Gesamtverteidigung - für mehr Frieden und zukunftsgerichtete Arbeitsplätze»,20001126
+16,-0.0021453399425621932,-0.08243399999576784,0.0069304475640473906,Volksinitiative «für tiefere Spitalkosten»,20001126
+17,-0.03976578707749951,0.12409680817721669,0.04838408863348158,Bundespersonalgesetz,20001126
+18,0.09966867042570401,0.0022955257904968464,-0.017075726701089474,Volksinitiative «Ja zu Europa!»,20010304
+19,-0.04055773115227685,0.03502569652460976,0.13691997834813516,Volksinitiative «für tiefere Arzneimittelpreise»,20010304
+20,0.028720258099044826,0.05735143384078973,0.12911827221276387,Volksinitiative «für mehr Verkehrssicherheit durch Tempo 30 innerorts mit Ausnahmen (Strassen für alle)»,20010304
+21,0.03884224744267649,0.10950808125459092,0.037128117516754794,Bundesgesetz über die Armee und die Militärverwaltung (Bewaffnung),20010610
+22,0.04622724619728749,0.11038829482860679,0.025778037929919867,Bundesgesetz über die Armee und die Militärverwaltung (Ausbildungszusammenarbeit),20010610
+23,0.002601856783739169,0.05137068319839371,0.04142795588847351,Bundesbeschluss über die Aufhebung der Genehmigungspflicht für die Errichtung von Bistümern,20010610
+24,-0.033127541958281916,0.0951456060931955,0.003873260135131573,Bundesbeschluss über eine Schuldenbremse,20011202
+25,0.03381373808079872,-0.009245433576668799,0.1369797746123217,Volksinitiative «für eine gesicherte AHV - Energie statt Arbeit besteuern!»,20011202
+26,0.08529672701734224,-0.037756593803081676,0.04155081817857678,Volksinitiative «für eine glaubwürdige Sicherheitspolitik und eine Schweiz ohne Armee»,20011202
+27,0.09002597605091309,-0.043976613234008734,0.03952228353631608,Volksinitiative «Solidarität schafft Sicherheit: Für einen freiwilligen zivilen Friedensdienst (ZFD)»,20011202
+28,0.0388124112951421,-0.05909292546939258,0.08562083417749167,Volksinitiative «für eine Kapitalgewinnsteuer»,20011202
+29,0.08731900075438352,0.07729435259243107,0.01486879005300194,Volksinitiative «für den Beitritt der Schweiz zur Organisation der Vereinten Nationen (UNO)»,20020303
+30,0.08544919701054325,-0.06387040541862966,0.036446108602113315,Volksinitiative «für eine kürzere Arbeitszeit»,20020303
+31,0.07000007235017598,0.045906684190151946,0.017125141522539543,"Schweizerisches Strafgesetzbuch (Schwangerschaftsabbruch, Fristenregelung)",20020602
+32,-0.055237678087435294,-0.06483236595460201,-0.02223835486095312,Volksinitiative «für Mutter und Kind - für den Schutz des ungeborenen Kindes und für die Hilfe an seine Mutter in Not»,20020602
+33,-0.058853747063633145,-0.07540078246160208,0.019871164986334074,Volksinitiative «Überschüssige Goldreserven in den AHV-Fonds»,20020922
+34,0.05330793698097557,0.05103206101123805,0.04307914723111857,"Gold für AHV, Kantone und Stiftung (Gegenvorschlag zur Goldinitiative)",20020922
+35,-0.059958300409121645,-0.06133097229815938,-0.0029063244898315343,Goldinitiative und Gegenvorschlag: Stichfrage,20020922
+36,-0.04988146964386009,0.09501711937365998,0.06020769454792125,Elektrizitätsmarktgesetz,20020922
+37,-0.08475637943542003,-0.029747616349525767,0.02310995391576632,Volksinitiative «gegen Asylrechtsmissbrauch»,20021124
+38,-0.03602554863357293,0.11203609946078057,-0.015591377730572856,Bundesgesetz über die obligatorische  Arbeitslosenversicherung und die Insolvenzentschädigung,20021124
+39,0.0393579940362699,0.03469367849930903,0.0009766430336161558,Bundesbeschluss über die Änderung der Volksrechte,20030209
+40,0.009543854753246551,0.06846735856964879,0.06238325245876719,Bundesgesetz über die Anpassung der kantonalen Beiträge an Spitalbehandlungen,20030209
+41,0.06503241571985122,0.06317839199520474,-0.010794072069492545,Bundesgesetz über die Armee und die Militärverwaltung (Armee XXI),20030518
+42,0.0656339149908794,0.05959378608255779,0.009401849908321068,Bundesgesetz über den Bevölkerungsschutz und den Zivilschutz,20030518
+43,0.0793566411684016,-0.07873326517566433,0.04815325399908311,Volksinitiative «Ja zu fairen Mieten»,20030518
+44,0.01226714678496418,0.002277289521075643,0.1524896563772579,Volksinitiative «für einen autofreien Sonntag pro Jahreszeit - ein Versuch für vier Jahre»,20030518
+45,0.07255529251724957,-0.10073201643820076,0.03607764476516706,Volksinitiative «Gesundheit muss bezahlbar bleiben»,20030518
+46,0.0740459745629261,-0.0888822324102167,0.018029060502606675,Volksinitiative «Gleiche Rechte für Behinderte»,20030518
+47,0.06312394987662373,-0.06593904980161958,0.07486722594104918,Volksinitiative «Strom ohne Atom - Für eine Energiewende und die schrittweise Stilllegung der Atomkraftwerke»,20030518
+48,0.06252425780835623,-0.03601145744950013,0.09861121691509844,Volksinitiative «MoratoriumPlus - Für die Verlängerung des Atomkraftwerk-Baustopps und die Begrenzung des Atomrisikos»,20030518
+49,0.07668057782986788,-0.07843608552451796,0.055615153267994384,Volksinitiative «für ein ausreichendes Berufsbildungsangebot»,20030518
+50,0.0020709707137943497,0.027242841749078962,-0.05520580502746366,Gegenentwurf zur Volksinitiative «Avanti - für sichere und leistungsfähige Autobahnen»,20040208
+51,-0.07731248256094297,0.06258103990339185,0.05606482524092416,Obligationenrecht (Miete). Änderung,20040208
+52,-0.039888938230342855,-0.0803728482532305,-0.000993023214362905,"Volksinitiative «Lebenslange Verwahrung für nicht therapierbare, extrem gefährliche Sexual- und Gewaltstraftäter»",20040208
+53,-0.02993053762359923,0.12688936542702525,0.004185831808605933,Bundesgesetz über die Alters- und Hinterlassenenversicherung (11. AHV-Revision),20040516
+54,0.04484192071238377,0.08688287374953364,0.06172341269931606,Bundesbeschluss über die Finanzierung der AHV/IV durch Anhebung der Mehrwertsteuersätze,20040516
+55,-0.014312395307680454,0.104893709821963,-0.0011620549878352251,"Bundesgesetz über die Änderung von Erlassen im Bereich der Ehe- und Familienbesteuerung, der Wohneigentumsbesteuerung und der Stempelabgaben",20040516
+56,0.1023458972072408,0.017366158671806995,-0.0389961942836189,Bundesbeschluss über die ordentliche Einbürgerung sowie über die erleichterte Einbürgerung junger Ausländerinnen und Ausländer der zweiten Generation,20040926
+57,0.10180788685123836,0.012507582737496305,-0.046586897888653535,Bundesbeschluss über den Bürgerrechtserwerb von Ausländerinnen und Ausländern der dritten Generation,20040926
+58,0.04956481738949486,-0.1112113210290005,-0.03276821449501382,Volksinitiative 'Postdienst für alle',20040926
+59,0.10334641463781497,-0.013922473332442443,-0.04874643591024414,"Bundesgesetz über die Erwerbsersatzordnung für Dienstleistende in Armee, Zivildienst und Zivilschutz (Erwerbsersatzgesetz, EOG)",20040926
+60,0.009001623646865737,0.04260582465199523,-0.013911479316312215,Bundesbeschluss zur Neugestaltung des Finanzausgleichs und der Aufgabenteilung zwischen Bund und Kantonen (NFA),20041128
+61,0.05404414820420904,0.07268120495728753,-0.00759160297591743,Bundesbeschluss über eine neue Finanzordnung,20041128
+62,0.0785120198795748,0.042391180277712104,-0.0423662059312557,Bundesgesetz über die Forschung an embryonalen Stammzellen,20041128
+63,0.09252226584156509,0.06915551933514824,-0.005596397290061009,Bundesbeschluss über die Genehmigung und die Umsetzung der bilateralen Abkommen zwischen der Schweiz und der EU über die Assoziierung an Schengen und Dublin,20050605
+64,0.047222039488706936,0.1082869184466038,0.07456543599246769,"Bundesgesetz über die eingetragene Partnerschaft gleichgeschlechtlicher Paare (Partnerschaftsgesetz, PartG)",20050605
+65,0.08057923314750336,0.09142084140134839,0.0010980870451280614,Bundesbeschluss über die Ausdehnung des Personenfreizügigkeitsabkommens auf die neuen EU-Staaten und über die Revision der flankierenden Massnahmen,20050925
+66,0.03236824564062079,-0.10635468488649989,-0.001964452866038031,Volksinitiative «für Lebensmittel aus gentechnikfreier Landwirtschaft»,20051127
+67,0.006903501784908496,0.12022988493271454,0.055820372744936356,Arbeitsgesetz (Ladenöffnungszeiten in Zentren des öffentlichen Verkehrs),20051127
+68,0.043800992390966804,0.058047086082277426,-0.01760598045524368,Bundesbeschluss über die Neuordnung der Verfassungsbestimmungen zur Bildung,20060521
+69,0.044086076277228846,-0.10214726405834954,0.06360429113620947,Volksinitiative «Nationalbankgewinne für die AHV»,20060924
+70,-0.09381819089496216,0.03635948715528187,0.030689989397323838,Bundesgesetz über die Ausländerinnen und Ausländer,20060924
+71,-0.09475500084738822,0.030949604507248527,0.013602105423375798,Änderung des Asylgesetzes,20060924
+72,0.0819367939467713,0.08789186410336644,0.014610207918277057,Bundesgesetz über die Zusammenarbeit mit den Staaten Osteuropas,20061126
+73,0.06470820752954683,-0.03944862873313188,0.016780598809040124,Bundesgesetz über die Familienzulagen,20061126
+74,0.08341297631739354,-0.09384923879553277,-0.004986044727648296,Volksinitiative «Für eine soziale Einheitskrankenkasse»,20070311
+75,-0.06760066115740226,0.08885597275206857,-0.018908103784474835,Bundesgesetz über die Invalidenversicherung,20070617
+76,0.07358749321116276,-0.03332076787552724,0.018565509210409874,Volksinitiative «Gegen Kampfjetlärm in Tourismusgebieten»,20080224
+77,-0.039500043284010876,0.07630073826804284,-0.07151799467439979,Bundesgesetz über die Verbesserung der steuerlichen Rahmenbedingungen für unternehmerische Tätigkeiten und Investitionen,20080224
+78,-0.09943401760900163,-0.006892596680351741,0.05159660433356259,Volksinitiative «Für demokratische Einbürgerungen»,20080601
+79,-0.08720295846886512,-0.026311090082817058,0.04961727265362765,Volksinitiative «Volkssouveränität statt Behördenpropaganda»,20080601
+80,-0.0840375402661644,0.056509774831550195,0.07243565155669814,Verfassungsartikel «Für Qualität und Wirtschaftlichkeit in der Krankenversicherung»,20080601
+81,-0.054218197919281626,-0.048151628422184685,0.07118995002751026,Volksinitiative «für die Unverjährbarkeit pornografischer Straftaten an Kindern»,20081130
+82,0.06258636606059982,-0.11014700264270907,0.020638099742993715,Volksinitiative «für ein flexibles AHV-Alter»,20081130
+83,-0.03490421464819762,0.025683388873277865,-0.074777475298337,Volksinitiative «Verbandsbeschwerderecht: Schluss mit der Verhinderungspolitik - Mehr Wachstum für die Schweiz!»,20081130
+84,-0.0166866575319999,0.025957602738189183,0.16014758820627514,Volksinitiative «für eine vernünftige Hanf-Politik mit wirksamem Jugendschutz»,20081130
+85,0.003956412728267346,0.08021268024424633,0.12628098038603905,Bundesgesetz über die Betäubungsmittel und psychotropen Stoffe,20081130
+86,0.07993860006986168,0.08268582006721163,-0.016737480996387083,Weiterführung des Freizügigkeitsabkommens zwischen der CH und der EU sowie über die Genehmigung des Protokolls über die Ausdehnung des Abkommens auf Bulgarien und Rumänien,20090208
+87,0.07713646839470265,-0.019389906151256568,-0.052572750848842484,Verfassungsartikel «Zukunft mit Komplementärmedizin» (Gegenentwurf zur Volksinitiative «Ja zur Komplementärmedizin»),20090517
+88,0.02288968130895447,0.10304158571426218,0.005791030193249045,Bundesbeschluss über die Genehmigung und Umsetzung des Notenaustauschs zwischen der Schweiz und der EU betreffend die Übernahme der Verordnung über biometrische Pässe,20090517
+89,0.0940037372980765,0.0303508011248325,-0.0007489280401494132,Bundesbeschluss über eine befristete Zusatzfinanzierung der Invalidenversicherung durch Anhebung der Mehrwertsteuersätze,20090927
+90,0.06465627707378219,0.08807326974224874,-0.024986442875594015,Bundesbeschluss über den Verzicht auf die Einführung der allgemeinen Volksinitiative,20090927
+91,0.039455318683869395,0.1126300532003033,0.010668203063697007,Bundesbeschluss zur Schaffung einer Spezialfinanzierung für Aufgaben im Luftverkehr,20091129
+92,0.08682680728935542,-0.02450617365334165,0.03757248062111706,Volksinitiative «Für ein Verbot von Kriegsmaterial-Exporten»,20091129
+93,-0.09102362194707471,-0.06092432277150527,0.013254484859167944,Volksinitiative «Gegen den Bau von Minaretten»,20091129
+94,-0.09465417064026041,-0.05489409901869245,0.014872030216278954,Volksinitiative «Für die Ausschaffung krimineller Ausländer»,20101128
+95,0.04505104607210697,0.0874008096109511,0.023560282852451667,Bundesbeschluss über die Aus- und Wegweisung krimineller Ausländerinnen und Ausländer im Rahmen der Bundesverfassung (Gegenentwurf zur Ausschaffungsinitiative),20101128
+96,-0.09444534597620075,-0.05746994374282766,0.014493591419638263,Ausschaffungsinitiative und Gegenvorschlag: Stichfrage,20101128
+97,0.05495142211826884,-0.0812414483233521,0.09013188377589264,Volksinitiative «Für faire Steuern. Stopp dem Missbrauch beim Steuerwettbewerb»,20101128
+98,0.08971265310317802,0.05165175932654227,0.042556418017665576,Volksinitiative «Für den Schutz vor Waffengewalt»,20110213
+99,0.021795811749618865,-0.011789655607451334,0.12629891561678558,Volksinitiative «Schluss mit uferlosem Bau von Zweitwohnungen!»,20120311
+100,0.04290298281545865,-0.035372219556044,-0.07998492804415605,Volksinitiative «Für ein steuerlich begünstigtes Bausparen zum Erwerb von selbst genutztem Wohneigentum und zur Finanzierung von baulichen Energiespar- und Umweltschutzmassnahmen»,20120311
+101,0.07796185076715309,-0.07244617437953085,0.04461666742069858,Volksinitiative «6 Wochen Ferien für alle»,20120311
+102,0.0752389933631077,0.03710549625784823,-0.026449802909953645,Bundesbeschluss über die Regelung der Geldspiele zugunsten gemeinnütziger Zwecke,20120311
+103,0.08239959969734854,-0.0656668229042558,-0.06905220774462442,Bundesgesetz über die Buchpreisbindung,20120311
+104,0.031098002295545043,-0.0038707950817886416,-0.0681374243082481,Volksinitiative «Eigene vier Wände dank Bausparen»,20120617
+105,-0.06886436481943854,-0.05240222060861305,0.0343883658175427,Volksinitiative «Für die Stärkung der Volksrechte in der Aussenpolitik (Staatsverträge vors Volk!)»,20120617
+106,-0.05774047961272679,0.06266978091253299,0.09336834171528097,Änderung des Bundesgesetzes über die Krankenversicherung (Managed Care),20120617
+107,0.06587194667481674,0.019175397991443504,0.04998371023606741,Bundesbeschluss über die Jugendmusikförderung,20120923
+108,-0.04381555506807339,0.0200096113316354,0.05078595629065456,Volksinitiative «Sicheres Wohnen im Alter»,20120923
+109,0.05711252764838002,-0.006756351456948391,0.045800947183831556,Volksinitiative «Schutz vor Passivrauchen»,20120923
+110,0.08811985445339923,0.04038181640871474,-0.053668283428996856,Änderung des Tierseuchengesetzes (TSG),20121125
+111,0.10055727107229166,-0.01138386005391017,-0.01337926374436821,Bundesbeschluss über die Familienpolitik,20130303
+112,-6.614390192103598e-05,-0.09045875958713814,0.10912957720731616,Volksinitiative «gegen die Abzockerei»,20130303
+113,-0.0013144210816130387,0.04596773343157112,0.14282453418821137,Bundesgesetz über die Raumplanung,20130303
+114,-0.05664410584684846,-0.055516397316361446,0.025138841394985456,Volksinitiative «Volkswahl des Bundesrates»,20130609
+115,-0.0790767244286425,0.0672649209967726,0.014759346483760422,Asylgesetz (AsylG) (Dringliche Änderungen des Asylgesetzes),20130609
+116,0.0959476448365629,-0.01985027617920051,0.03201985281039489,Volksinitiative «Ja zur Aufhebung der Wehrpflicht»,20130922
+117,0.08552950082067844,0.03847015539963725,-0.05417599034198903,Bundesgesetz über die Bekämpfung übertragbarer Krankheiten des Menschen (Epidemiengesetz),20130922
+118,0.011487162902464884,0.10624850314744042,0.01851779957987947,Arbeitsgesetz (Liberalisierung der Öffnungszeiten von Tankstellenshops),20130922
+119,0.040775134797870566,-0.11895260267957207,0.07227053086403862,Volksinitiative «1:12 - Für gerechte Löhne»,20131124
+120,-0.08244984180515606,-0.06653718375414724,-0.004635910559974898,"Volksinitiative «Familieninitiative: Steuerabzüge auch für Eltern, die ihre Kinder selber betreuen»",20131124
+121,0.011363726652597779,0.10202761664602902,0.05283521866046506,Bundesgesetz über die Abgabe für die Benützung von Nationalstrassen,20131124
+122,0.08742448006110003,0.03923551221552763,0.0002243993976594454,Bundesbeschluss über die Finanzierung und den Ausbau der Eisenbahninfrastruktur (direkter Gegenentwurf zur zurückgezogenen Volksinitiative «Für den öffentlichen Verkehr»),20140209
+123,-0.09723755362784958,-0.008081614767968889,0.05477953733409628,Volksinitiative «Abtreibungsfinanzierung ist Privatsache - Entlastung der Krankenversicherung durch Streichung der Kosten des Schwangerschaftsabbruchs aus der obligatorischen Grundversicherung»,20140209
+124,-0.09145561286200041,-0.06689434719374929,0.02273128184176188,Volksinitiative «Gegen Masseneinwanderung»,20140209
+125,0.07013978604780059,0.015452434203197493,0.012159170062346207,Bundesbeschluss über die medizinische Grundversorgung (direkter Gegenentwurf zur zurückgezogenen Volksinitiative «Ja zur Hausarztmedizin»),20140518
+126,0.012861405058731174,-0.11568067939115896,-0.08632382207442962,Volksinitiative «Pädophile sollen nicht mehr mit Kindern arbeiten dürfen»,20140518
+127,0.07558443233745356,-0.07427023404790133,0.07921977018029279,Volksinitiative «Für den Schutz fairer Löhne (Mindestlohn-Initiative)»,20140518
+128,-0.09683628020819264,0.03568582080878336,0.0030821153818999607,Bundesgesetz über den Fonds zur Beschaffung des Kampfflugzeugs Gripen,20140518
+129,-0.01135707753563,-0.08791425765519924,-0.0672096889379245,Volksinitiative «Schluss mit der MwSt-Diskriminierung des Gastgewerbes!»,20140928
+130,0.08982535717938937,-0.07219731112646552,-0.012806646358814315,Volksinitiative «Für eine öffentliche Krankenkasse»,20140928
+131,-0.025447027218881434,-0.011634763204466499,0.16577618715632758,Volksinitiative «Schluss mit den Steuerprivilegien für Millionäre (Abschaffung der Pauschalbesteuerung)»,20141130
+132,-0.07657836033679785,-0.07066812720094554,0.060564331739315254,Volksinitiative «Stopp der Überbevölkerung - zur Sicherung der natürlichen Lebensgrundlagen»,20141130
+133,-0.0692989408255652,-0.0877154858262968,0.029902378811428248,Volksinitiative «Rettet unser Schweizer Gold (Gold-Initiative)»,20141130
+134,0.02873779447964732,-0.07783971632212391,-0.06445102651240113,Volksinitiative «Familien stärken! Steuerfreie Kinder- und Ausbildungszulagen»,20150308
+135,0.007794894754401692,0.03865977638119377,0.13483316795820385,Volksinitiative «Energie- statt Mehrwertsteuer»,20150308
+136,0.09204272394598986,0.030615272349147297,-0.05914828764817255,Bundesbeschluss über die Änderung der Verfassungsbestimmung zur Fortpflanzungsmedizin und Gentechnologie im Humanbereich,20150614
+137,0.08993093720889597,-0.05564468096590045,0.017689552310462875,Volksinitiative «Stipendieninitiative»,20150614
+138,0.028446766117924776,-0.04539760449337611,0.14861018926650085,Volksinitiative «Millionen-Erbschaften besteuern für unsere AHV (Erbschaftssteuerreform)»,20150614
+139,0.08975037213315958,0.020237271002247405,-0.017123039777358913,Bundesgesetz über Radio und Fernsehen,20150614
+140,-0.041410823995469415,-0.07920725634093559,-0.05737529162011999,Volksinitiative «Für Ehe und Familie - gegen die Heiratsstrafe»,20160228
+141,-0.08253035230120004,-0.09062928143953337,-0.0191865868223558,Volksinitiative «Zur Durchsetzung der Ausschaffung krimineller Ausländer (Durchsetzungsinitiative)»,20160228
+142,0.04914180948546896,-0.09148317180008013,0.09475528022831865,Volksinitiative «Keine Spekulation mit Nahrungsmitteln!»,20160228
+143,-0.08065207321524533,0.02604055429341413,0.004837478564786007,Bundesgesetz über den Strassentransitverkehr im Alpengebiet (Sanierung Gotthard-Strassentunnel),20160228
+144,-0.018142807310862128,-0.09414182500583751,0.08596005684225039,Volksinitiative «Pro Service public»,20160605
+145,0.07103540372342745,-0.06279178528878272,0.08621666774329881,Volksinitiative «Für ein bedingungsloses Grundeinkommen»,20160605
+146,-0.06805393371498955,-0.056144490931972706,0.007701316586677766,Volksinitiative «Für eine faire Verkehrsfinanzierung»,20160605
+147,0.08902632003541566,0.02879682579765624,-0.07703796430326494,"Bundesgesetz über die medizinisch unterstützte Fortpflanzung (Fortpflanzungsmedizingesetz, FMedG)",20160605
+148,0.07626322785166935,0.08174923311615712,0.022818875808054282,Änderung des Asylgesetzes (AsylG),20160605
+149,0.09115866305305984,-0.03173769248578528,0.0589090379443728,Volksinitiative «Für eine nachhaltige und ressourceneffiziente Wirtschaft (Grüne Wirtschaft)»,20160925
+150,0.0763395360382123,-0.08296686642193264,0.04521677124129285,Volksinitiative «AHVplus: für eine starke AHV»,20160925
+151,0.031441323184978186,0.06023956908010157,-0.10736720066359313,"Bundesgesetz über den Nachrichtendienst (Nachrichtendienstgesetz, NDG)",20160925
+152,0.08992425798450998,-0.03594865272155815,0.04119108665466988,Volksinitiative «Für den geordneten Ausstieg aus der Atomenergie»,20161127
+153,0.10041939459739879,0.03752056658098619,-0.01472938828501186,Bundesbeschluss über die erleichterte Einbürgerung von Personen der dritten Ausländergeneration,20170212
+154,0.03984358326650348,0.06890519417672325,-0.11943034176655315,Bundesbeschluss über die Schaffung eines Fonds für die Nationalstrassen und den Agglomerationsverkehr,20170212
+155,0.024337771663084182,0.046630046731400955,-0.13439343612976293,Bundesgesetz über steuerliche Massnahmen zur Stärkung der Wettbewerbsfähigkeit des Unternehmensstandorts Schweiz,20170212
+156,0.09287785901994208,0.01870447819345715,-0.029920427885232397,Energiegesetz (EnG),20170521
+157,0.08758490921178645,-0.029791368686983843,-0.08467703337068751,Bundesbeschluss über die Ernährungssicherheit,20170924
+158,0.07549002605258294,0.022667065171441965,0.03221944284721817,Bundesbeschluss über die Zusatzfinanzierung der AHV durch eine Erhöhung der Mehrwertsteuer,20170924
+159,0.0721404579685856,0.013685631361984,0.02943347514066042,Bundesgesetz über die Reform der Altersvorsorge 2020,20170924
+160,0.05192569681031174,0.0875599068389664,-0.012372046565297659,Bundesbeschluss über die neue Finanzordnung 2021,20180304
+161,-0.07061113912374523,-0.038100591344630015,0.03296098576366665,Volksinitiative «Ja zur Abschaffung der Radio- und Fernsehgebühren (Abschaffung der Billag-Gebühren)»,20180304
+162,0.02182546521865933,-0.06661248599665608,0.0937326044436176,Volksinitiative «Für krisensicheres Geld: Geldschöpfung allein durch die Nationalbank! (Vollgeld-Initiative),20180610
+163,0.07675189230530301,-0.028674428254745914,-0.08765507190943728,Bundesgesetz über Geldspiele (Geldspielgesetz),20180610
+164,0.09213328605472461,0.013814567911468394,-0.013849969970872534,"Bundesbeschluss über die Velowege sowie die Fuss- und Wanderwege (direkter Gegenentwurf zur Volksinitiative «Zur Förderung der Velo-, Fuss- und Wanderwege [Velo-Initiative]»)",20180923
+165,0.09372070253943475,-0.05447135928906261,-0.041366610120840475,Volksinitiative «Für gesunde sowie umweltfreundlich und fair hergestellte Lebensmittel (Fair-Food-Initiative)»,20180923
+166,0.08775804726706765,-0.07014575088122942,-0.05662903881578841,Volksinitiative «Für Ernährungssouveränität. Die Landwirtschaft betrifft uns alle»,20180923
+167,0.0048252272963189066,-0.0012051510380729497,0.1061467971725077,Volksinitiative «Für die Würde der landwirtschaftlichen Nutztiere (Hornkuh-Initiative)»,20181125
+168,-0.0923457406189174,-0.052647763747374954,0.02690867343370278,Volksinitiative «Schweizer Recht statt fremde Richter (Selbstbestimmungsinitiative)»,20181125
+169,-0.09064801333443234,0.05091085794013179,0.030404978098570495,Änderung des Bundesgesetzes über den Allgemeinen Teil des Sozialversicherungsrechts (ATSG) (Gesetzliche Grundlage für die Überwachung von Versicherten),20181125
+170,0.0484483459623663,-0.026304059578958292,0.11761221592263338,Volksinitiative «Zersiedelung stoppen – für eine nachhaltige Siedlungsentwicklung (Zersiedelungsinitiative)»,20190210
+171,0.06745848091756816,0.05150824780778678,-0.10640806499190616,Bundesgesetz über die Steuerreform und die AHV-Finanzierung (STAF),20190519
+172,0.07259135535079554,0.100804019902662,0.03279139478911549,Bundesbeschluss über die Genehmigung und die Umsetzung des Notenaustauschs zwischen der Schweiz und der EU betreffend die Übernahme der Richtlinie (EU) 2017/853 zur Änderung der EU-Waffenrichtlinie (Weiterentwicklung des Schengen-Besitzstands),20190519
+173,0.08982925007945292,-0.045221931656015055,0.05519165926702589,Volksinitiative «Mehr bezahlbare Wohnungen»,20200209
+174,0.10178249239823849,0.012513338655640152,-0.03413543665406137,Strafgesetzbuch und des Militärstrafgesetz (Diskriminierung und Aufruf zu Hass aufgrund der sexuellen Orientierung),20200209
+175,-0.0912702039183355,-0.07391397197700045,0.0026469201909729203,Volksinitiative «Für eine massvolle Zuwanderung (Begrenzungsinitiative)»,20200927
+176,-0.06021754900665142,-0.02470946487490249,-0.07731311932965715,"Bundesgesetz über die Jagd und den Schutz wildlebender Säugetiere und Vögel (Jagdgesetz, JSG)",20200927
+177,0.07125505946911467,-0.005952783416033647,-0.11365648670444527,Bundesgesetz über die direkte Bundessteuer (DBG) (Steuerliche Berücksichtigung der Kinderdrittbetreuungskosten),20200927
+178,0.10379580817468476,-0.009203579821346999,-0.03874956426774342,Erwerbsersatzgesetz (indirekter Gegenvorschlag zur Volksinitiative «Für einen vernünftigen Vaterschaftsurlaub - zum Nutzen der ganzen Familie»),20200927
+179,-0.09290657767406743,0.041209952617691295,-0.0246518006940826,Bundesbeschluss über die Beschaffung neuer Kampfflugzeuge,20200927
+180,0.09336014667344779,-0.0462831108881796,0.05324290752216344,Volksinitiative «Für verantwortungsvolle Unternehmen – zum Schutz von Mensch und Umwelt»,20201129
+181,0.09035019950389941,-0.03037426379292692,0.08003208140192278,Volksinitiative «Für ein Verbot der Finanzierung von Kriegsmaterialproduzenten»,20201129
+182,-0.049033211480537915,-0.1027878337165881,-0.08178809806876168,Volksinitiative «Ja zum Verhüllungsverbot»,20210307
+183,-0.012148655163354352,0.067565067276147,-0.020521222928178942,"Bundesgesetz über elektronische Identifizierungsdienste (EID-Gesetz, BGEID)",20210307
+184,-0.05767263829323444,0.09256456202399752,0.06391133737590522,Bundesbeschluss über die Genehmigung des Umfassenden Wirtschaftspartnerschaftsabkommens zwischen den EFTA-Staaten und Indonesien,20210307
+185,0.02967819884835719,0.06560061037278171,0.1683336179193591,Volksinitiative «Für sauberes Trinkwasser und gesunde Nahrung – Keine Subventionen für den Pestizid- und den prophylaktischen Antibiotika-Einsatz»,20210613
+186,0.04417209785565462,0.05537818701772907,0.15959254653930843,Volksinitiative «Für eine Schweiz ohne synthetische Pestizide»,20210613
+187,0.08354517032459183,0.060733614073661776,0.0032814263014017586,Bundesgesetz über die gesetzlichen Grundlagen für Verordnungen des Bundesrates zur Bewältigung der Covid-19-Epidemie (Covid-19-Gesetz),20210613
+188,0.07372197048303777,0.09404468539398697,0.07600970466990095,Bundesgesetz über die Verminderung von Treibhausgasemissionen (CO2-Gesetz),20210613
+189,0.04343072118047976,0.040405211829911275,-0.07741213012601406,Bundesgesetz über polizeiliche Massnahmen zur Bekämpfung von Terrorismus (PMT),20210613
+190,0.06724456163153522,-0.07033796250429633,0.09529208338391384,"Volksinitiative «Löhne entlasten, Kapital gerecht besteuern»",20210926
+191,0.05115984285674452,0.08866433308673607,0.06350755002017028,Änderung des Schweizerischen Zivilgesetzbuches (Ehe für alle),20210926
+192,0.05930011396067452,-0.0522957002201696,0.06500357234062731,Volksinitiative «Für eine starke Pflege» (Pflegeinitiative),20211128
+193,0.003187208006351336,-0.03618304799865508,0.13282188411459744,Volksinitiative «Bestimmung der Bundesrichterinnen und Bundesrichter im Losverfahren» (Justiz-Initiative),20211128
+194,0.053346592655829056,0.09951441100855847,0.032012844042809296,"Änderung des Bundesgesetzes über die gesetzlichen Grundlagen für Verordnungen des Bundesrates zur Bewältigung der Covid-19-Epidemie (Covid-19-Gesetz) (Härtefälle, Arbeitslosenversicherung, familienergänzende Kinderbetreuung, Kulturschaffende, Veranstaltungen)",20211128
+195,0.011152788037805146,-0.06011400680395962,0.11451703789201108,Volksinitiative «Ja zum Tier- und Menschenversuchsverbot – Ja zu Forschungswegen mit Impulsen für Sicherheit und Fortschritt»,20220213
+196,0.096451693781438,-0.012577875705962959,0.022146848314958032,Volksinitiative «Ja zum Schutz der Kinder und Jugendlichen vor Tabakwerbung» (Kinder und Jugendliche ohne Tabakwerbung),20220213
+197,0.00883629347910059,0.07819941955820715,-0.09565708232855985,Änderung des Bundesgesetzes über die Stempelabgaben (StG),20220213
+198,0.09176122116600605,-0.005824612547431537,-0.03533204344329287,Bundesgesetz über ein Massnahmenpaket zugunsten der Medien,20220213
+199,0.09855445140695734,0.010291459112715813,-0.046327230018382466,"Änderung des Bundesgesetzes über Filmproduktion und Filmkultur (Filmgesetz, FiG)",20220515
+200,0.09257574463850102,-0.013912656948535208,-0.09826399786317275,"Änderung des Bundesgesetzes über die Transplantation von Organen, Geweben und Zellen (Transplantationsgesetz)",20220515
+201,0.04184469041556995,0.09529584883685034,-0.055921114978370226,Übernahme der EU-Verordnung über die Europäische Grenz- und Küstenwache (Weiterentwicklung des Schengen-Besitzstands),20220515
+202,0.037461995133745346,0.06315763691942787,0.15745152505900592,Volksinitiative «Keine Massentierhaltung in der Schweiz (Massentierhaltungsinitiative)»,20220925
+203,-0.050381883689114317,0.12993388049315832,0.019943432214098042,Bundesbeschluss über die Zusatzfinanzierung der AHV durch eine Erhöhung der Mehrwertsteuer,20220925
+204,-0.07076717107000292,0.11508688258281471,0.021864125730742878,Änderung des Bundesgesetzes über die Alters- und Hinterlassenenversicherung (AHV 21),20220925
+205,-0.035001706700570984,0.11105530659406147,-0.0725549304707825,Änderung des Bundesgesetzes über die Verrechnungssteuer (Stärkung des Fremdkapitalmarkts),20220925
+206,0.06818527761403825,0.07078898111887608,-0.06878234748754537,Bundesbeschluss über eine besondere Besteuerung grosser Unternehmensgruppen (Umsetzung des OECD/G20-Projekts zur Besteuerung grosser Unternehmensgruppen),20230618
+207,0.09506936997975426,0.058544322421489485,0.01832064999056893,"Bundesgesetz über die Ziele im Klimaschutz, die Innovation und die Stärkung der Energiesicherheit (KlG)",20230618
+208,0.07745604913776255,0.08717334031454607,0.020810068659590418,Änderung des Bundesgesetzes über die gesetzlichen Grundlagen für Verordnungen des Bundesrates zur Bewältigung der Covid-19-Epidemie (Covid-19-Gesetz),20230618
+209,0.08301197603209036,-0.0844716118581371,-0.01343110429399744,Volksinitiative «Für ein besseres Leben im Alter (Initiative für eine 13. AHV-Rente)»,20240303
+210,-0.05366884025033276,0.07811546596237139,0.08794257633605639,Volksinitiative «Für eine sichere und nachhaltige Altersvorsorge (Renteninitiative)»,20240303
+211,0.08293176829816566,-0.10199083845265254,-0.016172061626261378,Volksinitiative «Maximal 10% des Einkommens für die Krankenkassenprämien (Prämien-Entlastungs-Initiative)» ,20240609
+212,0.013532641313338083,-0.10545635936578251,0.027011010769388905,Volksinitiative «Für tiefere Prämien – Kostenbremse im Gesundheitswesen (Kostenbremse-Initiative)» ,20240609
+213,-0.03331813187818981,-0.12130388914576519,0.0014854224385988483,Volksinitiative «Für Freiheit und körperliche Unversehrtheit»,20240609
+214,0.05350897040899891,0.08119165672625114,0.012241045376488752,Bundesgesetz über eine sichere Stromversorgung mit erneuerbaren Energien (Änderung des Energiegesetzes und des Stromversorgungsgesetzes),20240609
+215,0.07227246336385511,0.0330565655451801,0.12571742587281168,Volksinitiative «Für die Zukunft unserer Natur und Landschaft (Biodiversitätsinitiative)»,20240922
+216,-0.036979875515521905,0.08435938813777562,-0.02154852951313295,"Änderung des Bundesgesetzes über die berufliche Alters-, Hinterlassenen- und Invalidenvorsorge (BVG) (Reform der beruflichen Vorsorge)",20240922
+217,-0.06385910275438758,0.06156845412563526,-0.027556253948656243,Bundesbeschluss über den Ausbauschritt 2023 für die Nationalstrassen,20241124
+218,-0.06788152637450146,0.06146800855229278,-0.059756800234098566,Änderung des Obligationenrechts (Mietrecht: Untermiete),20241124
+219,-0.06911527992520104,0.04626370008491518,-0.07393333545973095,Änderung des Obligationenrechts (Mietrecht: Kündigung wegen Eigenbedarfs),20241124
+220,-0.07495177218228498,0.09754067860557561,0.032195449257086256,Änderung des Bundesgesetzes über die Krankenversicherung (KVG) (Einheitliche Finanzierung der Leistungen),20241124
+221,0.09077490897953777,-0.010783151637715881,0.07575768431215156,Volksinitiative «Für eine verantwortungsvolle Wirtschaft innerhalb der planetaren Grenzen (Umweltverantwortungsinitiative)»,20250209
+222,-0.08110968453221516,0.058957582391327173,0.08366068991685081,Bundesbeschluss über die kantonalen Liegenschaftssteuern auf Zweitliegenschaften,20250928
+223,0.06976742605382236,0.0974860645970463,0.001844327137178658,"Bundesgesetz über den elektronischen Identitätsnachweis und andere elektronische Nachweise (E-ID-Gesetz, BGEID)",20250928

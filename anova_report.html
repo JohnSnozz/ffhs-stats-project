@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANOVA-Analyse: Schweizer Abstimmungsverhalten</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --bg-light: #f8f9fa;
+            --bg-code: #2d2d2d;
+            --text: #333;
+            --border: #dee2e6;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+        }
+
+        h1 {
+            color: var(--primary);
+            border-bottom: 3px solid var(--secondary);
+            padding-bottom: 15px;
+            margin-top: 40px;
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+        }
+
+        h3 {
+            color: var(--secondary);
+            margin-top: 30px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            color: white;
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header p {
+            margin: 15px 0 0 0;
+            opacity: 0.9;
+            font-size: 1.1em;
+        }
+
+        .toc {
+            background: var(--bg-light);
+            padding: 25px 35px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .toc h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .toc li {
+            margin: 8px 0;
+        }
+
+        .toc a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+        .code-block {
+            background: var(--bg-code);
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 20px 0;
+        }
+
+        .code-block .comment {
+            color: #6272a4;
+        }
+
+        .code-block .keyword {
+            color: #ff79c6;
+        }
+
+        .code-block .string {
+            color: #f1fa8c;
+        }
+
+        .code-block .function {
+            color: #50fa7b;
+        }
+
+        .code-block .number {
+            color: #bd93f9;
+        }
+
+        .explanation {
+            background: #e8f4f8;
+            border-left: 4px solid var(--secondary);
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .result {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 15px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: var(--primary);
+            color: white;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background: var(--bg-light);
+        }
+
+        tr:hover {
+            background: #e3f2fd;
+        }
+
+        .figure {
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .figure img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .figure figcaption {
+            margin-top: 10px;
+            color: #666;
+            font-style: italic;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background: var(--bg-light);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .card h4 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .badge-blue { background: #3498db; color: white; }
+        .badge-red { background: #e74c3c; color: white; }
+        .badge-green { background: #27ae60; color: white; }
+
+        .notebook-link {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 10px 5px 10px 0;
+        }
+
+        .notebook-link:hover {
+            background: var(--primary);
+        }
+
+        .formula {
+            background: var(--bg-light);
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-family: 'Times New Roman', serif;
+            font-size: 18px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>ANOVA-Analyse: Schweizer Abstimmungsverhalten</h1>
+    <p>Statistische Untersuchung regionaler Unterschiede bei 223 eidgenössischen Abstimmungen (2000-2025)</p>
+</div>
+
+<div class="toc">
+    <h3>Inhaltsverzeichnis</h3>
+    <ul>
+        <li><a href="#theorie">1. Theoretischer Hintergrund: ANOVA und Effektstärke</a></li>
+        <li><a href="#daten">2. Datenbasis und Kategorien</a></li>
+        <li><a href="#code">3. Code-Erklärung: ANOVA-Berechnung</a></li>
+        <li><a href="#ergebnisse">4. Ergebnisse im Überblick</a></li>
+        <li><a href="#beispiele">5. Fünf Beispiele mit grossen Effekten</a></li>
+        <li><a href="#fazit">6. Fazit</a></li>
+        <li><a href="#notebooks">7. Jupyter Notebooks</a></li>
+    </ul>
+</div>
+
+<h2 id="theorie">1. Theoretischer Hintergrund: ANOVA und Effektstärke</h2>
+
+<h3>Was ist ANOVA?</h3>
+<p>Die <strong>Analysis of Variance (ANOVA)</strong> ist ein statistisches Verfahren, das testet, ob sich die Mittelwerte von drei oder mehr Gruppen signifikant unterscheiden. In unserem Fall vergleichen wir das Abstimmungsverhalten (Ja-Anteil in %) zwischen verschiedenen Regionen.</p>
+
+<div class="formula">
+    F = MS<sub>zwischen</sub> / MS<sub>innerhalb</sub>
+</div>
+
+<p>Der <strong>F-Wert</strong> vergleicht die Varianz zwischen den Gruppen mit der Varianz innerhalb der Gruppen. Ein hoher F-Wert deutet auf signifikante Unterschiede hin.</p>
+
+<h3>Warum Effektstärke (η²)?</h3>
+
+<div class="warning">
+    <strong>Problem mit p-Werten:</strong> Bei grossen Stichproben (>2000 Gemeinden) wird fast jeder noch so kleine Unterschied statistisch signifikant. Der p-Wert sagt nur, <em>ob</em> ein Unterschied existiert, nicht <em>wie gross</em> er ist.
+</div>
+
+<p><strong>Eta-Quadrat (η²)</strong> ist ein Mass für die Effektstärke und gibt an, welcher Anteil der Gesamtvarianz durch die Gruppenzugehörigkeit erklärt wird:</p>
+
+<div class="formula">
+    η² = SS<sub>zwischen</sub> / SS<sub>total</sub>
+</div>
+
+<table>
+    <tr>
+        <th>η²</th>
+        <th>Interpretation</th>
+        <th>Bedeutung</th>
+    </tr>
+    <tr>
+        <td>0.01</td>
+        <td>Kleiner Effekt</td>
+        <td>1% der Varianz erklärt</td>
+    </tr>
+    <tr>
+        <td>0.06</td>
+        <td>Mittlerer Effekt</td>
+        <td>6% der Varianz erklärt</td>
+    </tr>
+    <tr>
+        <td>0.14+</td>
+        <td>Grosser Effekt</td>
+        <td>14%+ der Varianz erklärt</td>
+    </tr>
+</table>
+
+<h2 id="daten">2. Datenbasis und Kategorien</h2>
+
+<div class="grid-2">
+    <div class="card">
+        <h4>Datensatz</h4>
+        <ul>
+            <li><strong>464'169</strong> Abstimmungsergebnisse</li>
+            <li><strong>223</strong> Abstimmungsvorlagen</li>
+            <li><strong>2'083</strong> Gemeinden</li>
+            <li>Zeitraum: 2000-2025</li>
+        </ul>
+    </div>
+    <div class="card">
+        <h4>Drei Kategorisierungen</h4>
+        <ul>
+            <li><span class="badge badge-blue">Sprachgebiete</span> DE, FR, IT, RM</li>
+            <li><span class="badge badge-red">Stadt-Land</span> 3 Kategorien</li>
+            <li><span class="badge badge-green">Grossregionen</span> 7 Regionen</li>
+        </ul>
+    </div>
+</div>
+
+<h3>Sprachgebiete (Röstigraben)</h3>
+<table>
+    <tr><th>Code</th><th>Sprachgebiet</th><th>Anzahl Gemeinden</th></tr>
+    <tr><td>1</td><td>Deutsch</td><td>1'363</td></tr>
+    <tr><td>2</td><td>Französisch</td><td>596</td></tr>
+    <tr><td>3</td><td>Italienisch</td><td>108</td></tr>
+    <tr><td>4</td><td>Rätoromanisch</td><td>16</td></tr>
+</table>
+
+<h3>Stadt-Land-Klassifikation</h3>
+<table>
+    <tr><th>Code</th><th>Typ</th><th>Beschreibung</th></tr>
+    <tr><td>1</td><td>Städtisch</td><td>Kernstädte und Agglomerationsgemeinden</td></tr>
+    <tr><td>2</td><td>Intermediär</td><td>Dichter periurbaner Raum und ländliche Zentren</td></tr>
+    <tr><td>3</td><td>Ländlich</td><td>Ländliche Gemeinden ohne Zentrumsfunktion</td></tr>
+</table>
+
+<h2 id="code">3. Code-Erklärung: ANOVA-Berechnung</h2>
+
+<h3>Schritt 1: Daten laden</h3>
+
+<div class="code-block">
+<span class="keyword">import</span> sqlite3
+<span class="keyword">import</span> pandas <span class="keyword">as</span> pd
+<span class="keyword">from</span> scipy <span class="keyword">import</span> stats
+
+<span class="comment"># Datenbankverbindung</span>
+conn = sqlite3.<span class="function">connect</span>(<span class="string">'data/processed/swiss_votings.db'</span>)
+
+<span class="comment"># Abstimmungsdaten mit Gemeindemerkmalen laden</span>
+query = <span class="string">"""
+SELECT
+    v.municipality_id,
+    v.proposal_id,
+    v.ja_prozent,
+    mf.sprachgebiete,
+    mf.staedtische_laendliche_gebiete,
+    mf.grossregionen_der_schweiz
+FROM v_voting_results_analysis v
+INNER JOIN municipality_features mf
+    ON v.municipality_id = mf.bfs_nr
+WHERE v.ja_prozent IS NOT NULL
+"""</span>
+df = pd.<span class="function">read_sql_query</span>(query, conn)
+</div>
+
+<div class="explanation">
+    <strong>Erklärung:</strong> Wir verbinden die Abstimmungsergebnisse (<code>v_voting_results_analysis</code>) mit den Gemeindemerkmalen (<code>municipality_features</code>) über die BFS-Nummer. Die View <code>v_voting_results_analysis</code> berücksichtigt bereits Gemeindefusionen.
+</div>
+
+<h3>Schritt 2: Eta-Quadrat berechnen</h3>
+
+<div class="code-block">
+<span class="keyword">def</span> <span class="function">calculate_eta_squared</span>(df, group_col, value_col):
+    <span class="string">"""Berechnet eta² (Effektstärke) für ANOVA"""</span>
+
+    <span class="comment"># Gruppen extrahieren</span>
+    groups = [group[value_col].values
+              <span class="keyword">for</span> name, group <span class="keyword">in</span> df.<span class="function">groupby</span>(group_col)]
+
+    <span class="comment"># Gesamtmittelwert</span>
+    grand_mean = df[value_col].<span class="function">mean</span>()
+
+    <span class="comment"># Total Sum of Squares (Gesamtvarianz)</span>
+    ss_total = ((df[value_col] - grand_mean) ** <span class="number">2</span>).<span class="function">sum</span>()
+
+    <span class="comment"># Between-Group Sum of Squares (Varianz zwischen Gruppen)</span>
+    ss_between = <span class="function">sum</span>(
+        <span class="function">len</span>(g) * (g.<span class="function">mean</span>() - grand_mean) ** <span class="number">2</span>
+        <span class="keyword">for</span> g <span class="keyword">in</span> groups
+    )
+
+    <span class="comment"># Eta-Quadrat: Anteil erklärter Varianz</span>
+    eta_squared = ss_between / ss_total
+
+    <span class="keyword">return</span> eta_squared
+</div>
+
+<div class="explanation">
+    <strong>Erklärung:</strong>
+    <ul>
+        <li><code>ss_total</code>: Wie stark variieren alle Werte um den Gesamtmittelwert?</li>
+        <li><code>ss_between</code>: Wie stark variieren die Gruppenmittelwerte um den Gesamtmittelwert?</li>
+        <li><code>eta²</code>: Verhältnis zeigt, welcher Anteil der Gesamtvarianz auf Gruppenunterschiede zurückgeht</li>
+    </ul>
+</div>
+
+<h3>Schritt 3: ANOVA für alle Abstimmungen durchführen</h3>
+
+<div class="code-block">
+<span class="keyword">def</span> <span class="function">run_anova_for_proposal</span>(df, proposal_id, group_col):
+    <span class="string">"""Führt ANOVA für eine Abstimmung durch"""</span>
+
+    <span class="comment"># Daten für diese Abstimmung filtern</span>
+    data = df[df[<span class="string">'proposal_id'</span>] == proposal_id]
+
+    <span class="comment"># Gruppen erstellen</span>
+    groups = [group[<span class="string">'ja_prozent'</span>].values
+              <span class="keyword">for</span> _, group <span class="keyword">in</span> data.<span class="function">groupby</span>(group_col)]
+
+    <span class="comment"># F-Test (scipy)</span>
+    f_stat, p_value = stats.<span class="function">f_oneway</span>(*groups)
+
+    <span class="comment"># Effektstärke</span>
+    eta_sq = <span class="function">calculate_eta_squared</span>(data, group_col, <span class="string">'ja_prozent'</span>)
+
+    <span class="keyword">return</span> {
+        <span class="string">'f_statistic'</span>: f_stat,
+        <span class="string">'p_value'</span>: p_value,
+        <span class="string">'eta_squared'</span>: eta_sq,
+        <span class="string">'significant'</span>: p_value < <span class="number">0.05</span>
+    }
+
+<span class="comment"># Für alle 223 Abstimmungen und 3 Kategorien durchführen</span>
+results = []
+<span class="keyword">for</span> proposal_id <span class="keyword">in</span> df[<span class="string">'proposal_id'</span>].<span class="function">unique</span>():
+    <span class="keyword">for</span> group_col <span class="keyword">in</span> [<span class="string">'sprachgebiete'</span>, <span class="string">'staedtische_laendliche_gebiete'</span>,
+                       <span class="string">'grossregionen_der_schweiz'</span>]:
+        result = <span class="function">run_anova_for_proposal</span>(df, proposal_id, group_col)
+        results.<span class="function">append</span>(result)
+</div>
+
+<div class="explanation">
+    <strong>Erklärung:</strong> Wir führen <code>scipy.stats.f_oneway()</code> für jede der 223 Abstimmungen und jede der 3 Kategorisierungen durch. Das ergibt 669 ANOVA-Tests (223 × 3).
+</div>
+
+<h2 id="ergebnisse">4. Ergebnisse im Überblick</h2>
+
+<div class="result">
+    <strong>Hauptergebnis:</strong> Der Röstigraben ist statistisch messbar und erklärt durchschnittlich 29% der Varianz im Abstimmungsverhalten!
+</div>
+
+<table>
+    <tr>
+        <th>Kategorie</th>
+        <th>Signifikant (p&lt;0.05)</th>
+        <th>Mittlere η²</th>
+        <th>Max η²</th>
+    </tr>
+    <tr>
+        <td><span class="badge badge-blue">Röstigraben</span></td>
+        <td>221/223 (99.1%)</td>
+        <td>0.285</td>
+        <td>0.780</td>
+    </tr>
+    <tr>
+        <td><span class="badge badge-red">Stadt-Land</span></td>
+        <td>192/223 (86.1%)</td>
+        <td>0.044</td>
+        <td>0.239</td>
+    </tr>
+    <tr>
+        <td><span class="badge badge-green">Grossregionen</span></td>
+        <td>223/223 (100%)</td>
+        <td>0.256</td>
+        <td>0.683</td>
+    </tr>
+</table>
+
+<div class="figure">
+    <img src="5_ANOVA/fig_effect_distribution.png" alt="Verteilung der Effektstärken">
+    <figcaption>Abbildung 1: Verteilung der Effektstärken (η²) über alle 223 Abstimmungen. Die rote Linie markiert die Grenze für "grosse" Effekte (η² = 0.14).</figcaption>
+</div>
+
+<h2 id="beispiele">5. Fünf Beispiele mit grossen Effekten</h2>
+
+<h3>Beispiel 1: Ernährungssouveränität (2018) - Röstigraben</h3>
+
+<p><strong>Volksinitiative «Für Ernährungssouveränität. Die Landwirtschaft betrifft uns alle»</strong></p>
+
+<div class="grid-2">
+    <div class="card">
+        <h4>Statistik</h4>
+        <ul>
+            <li><strong>η² = 0.780</strong> (sehr grosser Effekt)</li>
+            <li>F = 2456.8, p &lt; 0.001</li>
+            <li>78% der Varianz durch Sprachregion erklärt</li>
+        </ul>
+    </div>
+    <div class="card">
+        <h4>Ergebnis nach Sprachgebiet</h4>
+        <ul>
+            <li>Französisch: <strong>52.8%</strong> Ja</li>
+            <li>Italienisch: 36.4% Ja</li>
+            <li>Deutsch: <strong>23.1%</strong> Ja</li>
+            <li>Differenz: <strong>30 Prozentpunkte</strong></li>
+        </ul>
+    </div>
+</div>
+
+<div class="figure">
+    <img src="5_ANOVA/fig_example1_ernaehrung.png" alt="Ernährungssouveränität Boxplot">
+    <figcaption>Abbildung 2: Boxplot und Violin-Plot für die Abstimmung zur Ernährungssouveränität. Die Romandie stimmte deutlich anders als die Deutschschweiz.</figcaption>
+</div>
+
+<h3>Beispiel 2: Organspende-Gesetz (2022) - Röstigraben</h3>
+
+<p><strong>Änderung des Bundesgesetzes über die Transplantation (Widerspruchslösung)</strong></p>
+
+<div class="figure">
+    <img src="5_ANOVA/fig_example2_organspende.png" alt="Organspende Boxplot">
+    <figcaption>Abbildung 3: Die Romandie befürwortete die Widerspruchslösung mit 78%, die Deutschschweiz lag knapp bei 51%.</figcaption>
+</div>
+
+<h3>Beispiel 3: Massentierhaltungsinitiative (2022) - Stadt-Land</h3>
+
+<p><strong>Volksinitiative «Keine Massentierhaltung in der Schweiz»</strong></p>
+
+<div class="grid-2">
+    <div class="card">
+        <h4>Statistik</h4>
+        <ul>
+            <li><strong>η² = 0.239</strong> (grosser Effekt)</li>
+            <li>F = 326.7, p &lt; 0.001</li>
+        </ul>
+    </div>
+    <div class="card">
+        <h4>Ergebnis nach Gemeindetyp</h4>
+        <ul>
+            <li>Städtisch: <strong>36.1%</strong> Ja</li>
+            <li>Intermediär: 31.2% Ja</li>
+            <li>Ländlich: <strong>25.4%</strong> Ja</li>
+        </ul>
+    </div>
+</div>
+
+<div class="figure">
+    <img src="5_ANOVA/fig_example3_massentierhaltung.png" alt="Massentierhaltung Boxplot">
+    <figcaption>Abbildung 4: Städtische Gemeinden stimmten tierfreundlicher ab als ländliche Gemeinden, wo die Landwirtschaft direkt betroffen ist.</figcaption>
+</div>
+
+<h3>Beispiel 4: Liegenschaftssteuern (2025) - Grossregionen</h3>
+
+<p><strong>Bundesbeschluss über die kantonalen Liegenschaftssteuern auf Zweitliegenschaften</strong></p>
+
+<div class="figure">
+    <img src="5_ANOVA/fig_example4_liegenschaften.png" alt="Liegenschaftssteuern Boxplot">
+    <figcaption>Abbildung 5: Die Ostschweiz und Zentralschweiz (>71% Ja) befürworteten die Steuer, die Région lémanique (41%) lehnte ab.</figcaption>
+</div>
+
+<h3>Beispiel 5: CO2-Gesetz (2021) - Kombinierte Effekte</h3>
+
+<p><strong>Bundesgesetz über die Verminderung von Treibhausgasemissionen</strong></p>
+
+<div class="figure">
+    <img src="5_ANOVA/fig_example5_co2.png" alt="CO2-Gesetz kombinierte Analyse">
+    <figcaption>Abbildung 6: Das CO2-Gesetz zeigt sowohl Stadt-Land-Effekte als auch Sprachregion-Effekte. Die Heatmap zeigt die Interaktion beider Faktoren.</figcaption>
+</div>
+
+<div class="explanation">
+    <strong>Interpretation:</strong> Die Heatmap rechts zeigt, dass städtische Deutschschweizer Gemeinden am stärksten zustimmten (50.3%), während ländliche Westschweizer Gemeinden am skeptischsten waren (38.5%).
+</div>
+
+<h2 id="fazit">6. Fazit</h2>
+
+<div class="card">
+    <h4>Zentrale Erkenntnisse</h4>
+    <ol>
+        <li><strong>Der Röstigraben ist real und messbar:</strong> Bei 99% aller Abstimmungen gibt es signifikante Unterschiede zwischen den Sprachregionen. Die durchschnittliche Effektstärke (η² = 0.29) ist gross.</li>
+        <li><strong>Stadt-Land-Unterschiede sind kleiner, aber konsistent:</strong> Bei 86% der Abstimmungen signifikant, aber mit kleinerer Effektstärke (η² = 0.04).</li>
+        <li><strong>Grossregionen zeigen starke Muster:</strong> 100% signifikant mit hoher Effektstärke (η² = 0.26) - oft eine Kombination aus Sprach- und Stadt-Land-Effekten.</li>
+        <li><strong>Themenabhängigkeit:</strong> Die stärksten Effekte zeigen sich bei Landwirtschaft, Gesundheit, Umwelt und Steuern.</li>
+    </ol>
+</div>
+
+<h2 id="notebooks">7. Jupyter Notebooks</h2>
+
+<p>Die vollständige Analyse mit interaktiven Visualisierungen finden Sie in den folgenden Notebooks:</p>
+
+<a href="5_ANOVA/anova_notebook.ipynb" class="notebook-link">📓 ANOVA Hauptanalyse</a>
+
+<h3>Weitere Dateien im Ordner 5_ANOVA/</h3>
+<table>
+    <tr><th>Datei</th><th>Beschreibung</th></tr>
+    <tr><td><code>anova_analysis.py</code></td><td>Python-Script für die ANOVA-Berechnung</td></tr>
+    <tr><td><code>anova_visualizations.py</code></td><td>Script für Visualisierungen</td></tr>
+    <tr><td><code>anova_results_full.csv</code></td><td>Alle 669 ANOVA-Ergebnisse (223 × 3)</td></tr>
+    <tr><td><code>anova_summary.csv</code></td><td>Zusammenfassung nach Kategorie</td></tr>
+    <tr><td><code>top15_roestigraben_sprachgebiete.csv</code></td><td>Top 15 Röstigraben-Abstimmungen</td></tr>
+    <tr><td><code>top15_stadt-land.csv</code></td><td>Top 15 Stadt-Land-Abstimmungen</td></tr>
+    <tr><td><code>top15_grossregionen.csv</code></td><td>Top 15 Grossregionen-Abstimmungen</td></tr>
+</table>
+
+<footer>
+    <p><strong>FFHS Semesterarbeit</strong> - Statistische Analyse Schweizer Abstimmungsdaten (2000-2025)</p>
+    <p>Erstellt am: Januar 2026</p>
+</footer>
+
+</body>
+</html>
